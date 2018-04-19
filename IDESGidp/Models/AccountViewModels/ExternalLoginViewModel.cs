@@ -8,6 +8,8 @@ namespace IDESGidp.Models.AccountViewModels
 {
     public class ExternalLoginViewModel
     {
+        public string UserName { get; set; }
+
         [Required]
         [EmailAddress]
         public string Email { get; set; }

@@ -20,15 +20,15 @@
             </p>
         </li>
         <li>
-            <p>Scan the QR Code or enter this key <kbd>@Model.SharedKey</kbd> into your two factor authenticator app. Spaces and casing do not matter.</p>
-            <div class="alert alert-info">To enable QR code generation please read our <a href="https://go.microsoft.com/fwlink/?Linkid=852423">documentation</a>.</div>
+            <p>Scan the QR Code, which should appear below momentarily, or enter this key <kbd>@Model.SharedKey</kbd> into your two factor authenticator app. Spaces and casing do not matter.</p>
             <div id="qrCode"></div>
+            <div id="qrcode" style="width:150px; height:150px; margin-top:15px;" title="The QRCode should appear here momentarily"></div>
             <div id="qrCodeData" data-url="@Model.AuthenticatorUri"></div>
         </li>
         <li>
             <p>
                 Once you have scanned the QR code or input the key above, your two factor authentication app will provide you
-                with a unique code. Enter the code in the confirmation box below.
+                with a unique code, known as a time-based one-time password (totp). Enter the code in the confirmation box below.
             </p>
             <div class="row">
                 <div class="col-md-6">
@@ -48,5 +48,7 @@
 </div>
 
 @section Scripts {
+    <script type="text/javascript" src="../js/qrcode.js"></script>
+    <script type="text/javascript" src="~/js/site.js"></script>
     @await Html.PartialAsync("_ValidationScriptsPartial")
 }

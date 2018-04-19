@@ -41,8 +41,23 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2018 - IDESGidp</p>
+
+        <footer style="background-color:black; color:white; vertical-align:middle">
+            <table style="width:100%">
+                <tr style="width:100%">
+                    <td style="vertical-align:top; max-width: 35%" align="left">
+                        <img class="footerImage" src="~/images/oid-l-pending-noborder.png"
+                             alt="OpenID Certification mark" title="Link to the OpenID certification page" onclick="window.location.href ='http://openid.net/certification/'" />
+                    </td>
+                    <td style="padding:0 14px">
+                        Web site created to demonstrate compliance with the IDESG Framework and the OpenID certification. &copy; @DateTime.Now.Year - Tom Jones
+                    </td>
+                    <td style="vertical-align:top; max-width:30%" align="right">
+                        <img class="footerImage" src="~/images/IDEF-reg-black-271.png"
+                             alt="IDEF mark" title="Link to the IDEF registry" onclick="window.location.href ='http://idefregistry.org'" />
+                    </td>
+                </tr>
+            </table>
         </footer>
     </div>
 

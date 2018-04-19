@@ -10,12 +10,31 @@
     padding-right: 15px;
 }
 
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
     line-height: 1.4;
 }
 
+/* buttons and links extension to use brackets: [ click me ] */
+.btn-bracketed::before {
+    display: inline-block;
+    content: "[";
+    padding-right: 0.5em;
+}
+
+.btn-bracketed::after {
+    display: inline-block;
+    content: "]";
+    padding-left: 0.5em;
+}
 /* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img[src$=".svg"] {
     width: 100%;
@@ -33,3 +52,59 @@
         display: none;
     }
 }
+
+/* allows footer images to be limited to 1/3 of width for small screen*/
+.footerImage {
+    max-height: 150px;
+    width: 100%;
+}
+
+/* button for baseline funcational Requirements*/
+.btn-bfr {
+    display: inline-block;
+    background-color: aqua;
+    border-radius: 15px;
+    padding: 2px 5px;
+    margin-bottom: 3px;
+    color: #333333;
+    border-color: #cccccc;
+}
+
+    .btn-bfr:hover,
+    .btn-bfr:focus,
+    .btn-bfr:active,
+    .btn-bfr.active,
+    .open .dropdown-toggle.btn-bfr {
+        color: #333333;
+        background-color: #ebebeb;
+        border-color: #adadad;
+    }
+
+    .btn-bfr:active,
+    .btn-bfr.active,
+    .open .dropdown-toggle.btn-bfr {
+        background-image: none;
+    }
+
+    .btn-bfr.disabled,
+    .btn-bfr[disabled],
+    fieldset[disabled] .btn-bfr,
+    .btn-bfr.disabled:hover,
+    .btn-bfr[disabled]:hover,
+    fieldset[disabled] .btn-bfr:hover,
+    .btn-bfr.disabled:focus,
+    .btn-bfr[disabled]:focus,
+    fieldset[disabled] .btn-bfr:focus,
+    .btn-bfr.disabled:active,
+    .btn-bfr[disabled]:active,
+    fieldset[disabled] .btn-bfr:active,
+    .btn-bfr.disabled.active,
+    .btn-bfr[disabled].active,
+    fieldset[disabled] .btn-bfr.active {
+        background-color: aqua;
+        border-color: #cccccc;
+    }
+
+    .btn-bfr .caret {
+        border-top-color: #333333;
+    }

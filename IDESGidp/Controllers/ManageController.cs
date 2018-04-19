@@ -282,7 +282,7 @@ namespace IDESGidp.Controllers
             // Clear the existing external cookie to ensure a clean login process
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
 
-            StatusMessage = "The external login was added.";
+            StatusMessage = "The external signin was added.";
             return RedirectToAction(nameof(ExternalLogins));
         }
 
@@ -299,11 +299,11 @@ namespace IDESGidp.Controllers
             var result = await _userManager.RemoveLoginAsync(user, model.LoginProvider, model.ProviderKey);
             if (!result.Succeeded)
             {
-                throw new ApplicationException($"Unexpected error occurred removing external login for user with ID '{user.Id}'.");
+                throw new ApplicationException($"Unexpected error occurred removing external signin for user with ID '{user.Id}'.");
             }
 
             await _signInManager.SignInAsync(user, isPersistent: false);
-            StatusMessage = "The external login was removed.";
+            StatusMessage = "The external signin was removed.";
             return RedirectToAction(nameof(ExternalLogins));
         }
 

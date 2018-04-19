@@ -9,14 +9,19 @@
 
 <p class="text-info">
     You've successfully authenticated with <strong>@ViewData["LoginProvider"]</strong>.
-    Please enter an email address for this site below and click the Register button to finish
-    logging in.
+    Please enter an email address for this site below if thre is not one that suits your needs. If the user name is not entered, then the email address will also be used
+    for that purpose.  When any changes are complete, please click the Register button to finish sign in.
 </p>
 
 <div class="row">
     <div class="col-md-4">
         <form asp-action="ExternalLoginConfirmation" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
             <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserName"></label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>  <!-- TODO this should be checking for spaces and illegal charaters -->
+            </div>
             <div class="form-group">
                 <label asp-for="Email"></label>
                 <input asp-for="Email" class="form-control" />

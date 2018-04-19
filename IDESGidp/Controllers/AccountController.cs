@@ -64,7 +64,7 @@ namespace IDESGidp.Controllers
                 var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User logged in.");
+                    _logger.LogInformation("User signed in.");
                     return RedirectToLocal(returnUrl);
                 }
                 if (result.RequiresTwoFactor)
@@ -78,7 +78,7 @@ namespace IDESGidp.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                    ModelState.AddModelError(string.Empty, "Invalid sign in attempt.");
                     return View(model);
                 }
             }
@@ -127,7 +127,7 @@ namespace IDESGidp.Controllers
 
             if (result.Succeeded)
             {
-                _logger.LogInformation("User with ID {UserId} logged in with 2fa.", user.Id);
+                _logger.LogInformation("User with ID {UserId} signed in with 2fa.", user.Id);
                 return RedirectToLocal(returnUrl);
             }
             else if (result.IsLockedOut)
@@ -181,7 +181,7 @@ namespace IDESGidp.Controllers
 
             if (result.Succeeded)
             {
-                _logger.LogInformation("User with ID {UserId} logged in with a recovery code.", user.Id);
+                _logger.LogInformation("User with ID {UserId} signed in with a recovery code.", user.Id);
                 return RedirectToLocal(returnUrl);
             }
             if (result.IsLockedOut)
@@ -246,7 +246,7 @@ namespace IDESGidp.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            _logger.LogInformation("User logged out.");
+            _logger.LogInformation("User signed out.");
             return RedirectToAction(nameof(HomeController.Index), "Home");
         }
 
@@ -280,7 +280,7 @@ namespace IDESGidp.Controllers
             var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false, bypassTwoFactor: true);
             if (result.Succeeded)
             {
-                _logger.LogInformation("User logged in with {Name} provider.", info.LoginProvider);
+                _logger.LogInformation("User signed in with {Name} provider.", info.LoginProvider);
                 return RedirectToLocal(returnUrl);
             }
             if (result.IsLockedOut)
@@ -308,9 +308,11 @@ namespace IDESGidp.Controllers
                 var info = await _signInManager.GetExternalLoginInfoAsync();
                 if (info == null)
                 {
-                    throw new ApplicationException("Error loading external login information during confirmation.");
+                    throw new ApplicationException("Error loading external sign in information during confirmation.");
                 }
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                if (string.IsNullOrWhiteSpace (model.UserName))
+                { model.UserName = model.Email; }
+                var user = new ApplicationUser { UserName = model.UserName, Email = model.Email };
                 var result = await _userManager.CreateAsync(user);
                 if (result.Succeeded)
                 {
