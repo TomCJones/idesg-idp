@@ -14,8 +14,8 @@
             <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
             <div class="carousel-caption" role="option">
                 <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
+                    Learn about the process of getting registered on the IDEF site.
+                    <a class="btn btn-default" href="https://www.idefregistry.org/">
                         Learn More
                     </a>
                 </p>
@@ -25,8 +25,8 @@
             <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
             <div class="carousel-caption" role="option">
                 <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
+                    There is a tension between usability, privacy, security and interoperability.
+                    <a class="btn btn-default" href="https://wiki.idesg.org/wiki/index.php?title=Identity_Model">
                         Learn More
                     </a>
                 </p>
@@ -36,8 +36,8 @@
             <img src="~/images/banner3.svg" alt="Package Management" class="img-responsive" />
             <div class="carousel-caption" role="option">
                 <p>
-                    Bring in libraries from NuGet and npm, and automate tasks using Grunt or Gulp.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
+                    Learn how to build ASP.NET apps that can run anywhere.
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
                         Learn More
                     </a>
                 </p>
@@ -47,13 +47,14 @@
             <img src="~/images/banner4.svg" alt="Microsoft Azure" class="img-responsive" />
             <div class="carousel-caption" role="option">
                 <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
+                    A new identity model is described for the best user experience in federated identity.
+                    <a class="btn btn-default" href="https://wiki.idesg.org/wiki/index.php?title=Identity_Model_Overview">
                         Learn More
                     </a>
                 </p>
             </div>
         </div>
+
     </div>
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -67,40 +68,69 @@
 
 <div class="row">
     <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
+        <h2>This web application shows how to:</h2>
+        <ul style="margin:0; padding:0">
+            <li>Build an Identity Provider (IdP) compliant with standards</li>
+            <li>Get a head start on <a href="https://www.eugdpr.org/">GDPR compliance</a> </li>
+            <li>Meet the criteria for an <a href="http://openid.net/certification/"> OpenID certfied site</a></li>
+            <li>Become an <a href="https://www.idefregistry.org/">IDEF Registered Site</a></li>
+            <li>Built using <a href="http://docs.identityserver.io/en/release">IdentityServer4 </a>for OpenID Connect endpoint services</li>
+            <li>Use this site's code available from <a href="https://github.com/TomCJones/idesg-idp"> open source on Github</a></li>
         </ul>
     </div>
+
     <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
+        <h2>IDESG Guidelines</h2>
+        <p>The collections of IDESG guidelines current at the time were used to create this example of best practices.</p>
+        <p>
+            <a class="btn btn-default" title="This link navigates to the IDESG wiki."
+               href="https://wiki.idesg.org/wiki/index.php?title=User_Experience_Guidelines_Metrics">
+                UX Guidelines &raquo;
+            </a>
+        </p>
+        <p>
+            The list of the baseline Functional requirments the IDEF version 1.0 are used in the Self-Assesment
+            and are referenced in links throughout this example
+            using the same azure coloring and mouse hover tool tip as the button below.
+        </p>
+        <p>
+            <a class="btn btn-bfr" title="This link navigates to the main page for the web version of guidelines"
+               href="https://wiki.idesg.org/wiki/index.php?title=Baseline_Functional_Requirements_v1.0">Baseline Functional Reqs &raquo;</a>
+        </p>
+        <p>
+            Mapping of roles used from the IDEF:
+            <ol>
+                <li>Authenticate - This role is performed within this example for local users and in 3rd party providers if enabled.</li>
+                <li>Authorize - This example, like all RPs, contain this role, some parts of which could be performed in other servers</li>
+            </ol>
+        </p>
     </div>
     <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
+        <h2>IDESG Guidelines for business proceses</h2>
+        <p>The collections of IDESG guidelines current at the time were used to create this example of best practices.</p>
+
+        <p>
+            All Relying Parties shall document business polcies and proceedures for all identity functions.
+        </p>
+        <p>
+            <a class="btn btn-bfr" title="View the Interop-5 requirement"
+               href="https://wiki.idesg.org/wiki/index.php?title=Interop_Req_5">Documented Processes &raquo;</a>
+        </p>
+        <h2>NIST and the NSTIC</h2>
+        <p>
+            The origin and current direction of the National Strategy for Trusted Identities in Cyberspace.
+            <div style="margin:4px">
+                <a class="btn btn-default" title="This link navigates to the main page for the web version of guidelines"
+                   href="https://www.nist.gov/itl/tig">Trusted Identities Group &raquo;</a>
+            </div>
+            <div style="margin:4px">
+                <a class="btn btn-default" title="This link navigates to the main page for the web version of guidelines"
+                   href="http://nstic.blogs.govdelivery.com/">NSTIC Notes &raquo;</a>
+            </div>
+            <div style="margin:4px">
+                <a class="btn btn-default" title="This link navigates to the main page for the web version of guidelines"
+                   href="https://www.whitehouse.gov/sites/default/files/rss_viewer/NSTICstrategy_041511.pdf">Origin Document  &raquo;</a>
+            </div>
+        </p>
     </div>
 </div>

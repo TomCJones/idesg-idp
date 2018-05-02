@@ -10,9 +10,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
 using IDESGidp.Models;
 using IDESGidp.Models.ManageViewModels;
 using IDESGidp.Services;
+using static IDESGidp.Services.WebAuthnHelperExt;
 
 namespace IDESGidp.Controllers
 {
@@ -414,7 +416,129 @@ namespace IDESGidp.Controllers
 
             return RedirectToAction(nameof(ShowRecoveryCodes));
         }
+        
+        [HttpGet]
+        public async Task<IActionResult> EnableU2F()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                throw new ApplicationException($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+            }
 
+            var model = new EnableWebAuthNViewModel();
+ //           await LoadSharedKeyAndQrCodeUriAsync(user, model);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EnableU2F(EnableWebAuthNViewModel model)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                throw new ApplicationException($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                string userName = model.UserName;
+                string appId = HttpContext.Request.Path;
+                string challenge = model.Challenge;
+                string version = model.Version;
+                string jsonRet = model.TokenResponse;
+
+                RegResponse response = JsonConvert.DeserializeObject<RegResponse>(jsonRet);
+
+
+                string[] recoveryCodes = new string[] { response.RegistrationData, response.ClientData, response.Challenge, response.Version};
+                TempData[RecoveryCodesKey] = recoveryCodes;
+
+                int RecoveryCodesLeft = await _userManager.CountRecoveryCodesAsync(user);
+
+                return RedirectToAction(nameof(ShowRecoveryCodes));
+            }
+            return View(model);
+        }
+
+        public async Task<IActionResult> GetChallenge()
+        {
+            try
+            {
+                //                List<ServerChallenge> serverRegisterResponse = await _membershipService.GenerateServerChallenges(HttpContext.User.Identity.Name);
+                //                ServerChallenge sRR0 = serverRegisterResponse[0];
+
+                string requestOrigin = HttpContext.Request.Scheme + "//:" + HttpContext.Request.Host;
+
+                PublicKeyCredentialCreationOptions options = new PublicKeyCredentialCreationOptions
+                {
+                    PublicKeyCredentialRpEntity = "https://localhost:44371",  // serverRegisterResponse[0].appId,
+                    ChallengeBuffer = "7hochY2r9CW6KDXXsRQjq774Brst1udfOf7HR2nst_Q",   // "kslkjf829837kjsldk",  //serverRegisterResponse[0].challenge,
+                    PublicKeyCredentialUserEntity = HttpContext.User.Identity.Name,
+                    AuthenticationExtensionsClientInputs = new Dictionary<string, object>()
+                        {
+//                            {"AppID",serverRegisterResponse[0].appId },
+//                            {"Version", serverRegisterResponse[0].version}
+                            {"AppID", "https://localhost:44371" },
+                            {"Version", "U2F_V2"}
+                        }
+                };
+
+                EnableWebAuthNViewModel registerModel = new EnableWebAuthNViewModel
+                {
+                    jsonData = JsonConvert.SerializeObject(options),
+                    AppId = options.PublicKeyCredentialRpEntity,
+                    Challenge = options.ChallengeBuffer,
+                    Version = (string)options.AuthenticationExtensionsClientInputs["Version"],
+                    UserName = HttpContext.User.Identity.Name
+                };
+
+
+                return new JsonResult(JsonConvert.SerializeObject(registerModel));
+            }
+            catch (Exception exception)
+            {
+                _logger.LogError(exception.Message);
+            }
+            return NoContent();  // TODO this is not helpful
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> EnableWebAuthN()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                throw new ApplicationException($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+            }
+
+            var model = new EnableWebAuthNViewModel();
+//            await LoadSharedKeyAndQrCodeUriAsync(user, model);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EnableWebAuthN(EnableWebAuthNViewModel model)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                throw new ApplicationException($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+            }
+
+            if (!ModelState.IsValid)
+            {
+//                await LoadSharedKeyAndQrCodeUriAsync(user, model);
+                return View(model);
+            }
+            return View(model);
+        }
+        
         [HttpGet]
         public IActionResult ShowRecoveryCodes()
         {

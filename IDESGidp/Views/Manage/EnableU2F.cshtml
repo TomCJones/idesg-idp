@@ -1,0 +1,78 @@
+﻿@model EnableWebAuthNViewModel
+@{
+    ViewData["Title"] = "Register U2F Late Binding Token";
+    ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
+}
+
+<h4>@ViewData["Title"]</h4>
+<div>
+    <p>
+        <a href="https://en.wikipedia.org/wiki/Universal_2nd_Factor">The Universal Second Factor</a> protocol from the <a href="https://fidoalliance.org/">FIDO alliance</a>
+        enables a strong privacy-preserving means to authenticate yourself to any service without creating any identifier that can be used to track you.
+    </p>
+    <p>To enable U2F late binding tokens the first step needs to be followed once per computer where the token will be used:</p>
+    <ol class="list">
+        <li>
+            <p>
+                Depending on the browsers that are to be used with the token follow their directions for registration and use of the U2F Late Binding Token.
+                In April 2018 Chromium, Firfox and Opera support the USB interface necessary for U2F tokens to be used.
+                <a href="https://en.wikipedia.org/wiki/Universal_2nd_Factor">Wikipedia can be consulted for a currently list of supported devices and browsers.</a>
+                The Microsoft Edge browser had annouced support, but not a date when they will enable Web Authentication and the U2F tokens.
+            </p>
+        </li>
+        <li>
+            <p>
+                Select a service where you plan to use the Late Binding Token, for example, there is a good list of soltuions providers <a href="https://www.yubico.com/solutions/#FIDO-U2F">here</a>.
+                The current release of this service enables U2F only for desktop computers. Bluetooth technologies will enable this for mobile devices soon.
+            </p>
+        </li>
+        <li>
+            <p>Ckick on the button below which will enable registration between this site and your U2F Late Binding Token.</p>
+        </li>
+        <li>
+            <p>
+                Your two factor authentication app will provide you with a code unique to this device and this service.
+                That code cannot be used by another other token, device or web site.
+                But you can reuse your token, binding it to any site that supports U2F.
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <button id="BindU2F" class="btn btn-default" type="submit">Bind site to your Token</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ol>
+    <form method="post">
+        <div classs="form-group" style="" title="Token place">
+            <input asp-for="TokenResponse" />
+            <input id="bindForm" type="submit" />
+        </div>
+    </form>
+</div>
+<!-- Modal -->
+<div id="promptModal" class="modal fade" style="display:none" tabindex="-1" role="dialog" data-json="@ViewBag.JsonReq" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h3 id="myModalLabel">Starting U2F access</h3>
+            </div>
+            <div class="modal-body">
+                <p>You may be prompted to allow access your Token credentials. After granting permission, the token will start to blink.</p>
+                <blink>Press button on token.</blink>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-default" href="javascript:history.back()">Abort</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script type="text/javascript" src="~/js/site.js"></script>
+    <script type="text/javascript" src="~/js/bindingU2F.js"></script>
+    <script type="text/javascript" src="~/js/u2f-api-1.1.js"></script>
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

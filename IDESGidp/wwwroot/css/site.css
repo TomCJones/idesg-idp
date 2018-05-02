@@ -45,10 +45,18 @@ textarea {
     margin: 15px;
 }
 
+/* responsive elements */
+#largescreen {
+    display: normal
+}
+
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
     /* Hide captions */
     .carousel-caption {
+        display: none;
+    }
+    .largescreen {
         display: none;
     }
 }

@@ -1,0 +1,61 @@
+u2f.sendRegisterRequest = function(appId, registerRequests, registeredKeys, callback, opt_timeoutSeconds) {
+  u2f.getPortSingleton_(function(port) {
+    var reqId = ++u2f.reqCounter_;
+    u2f.callbackMap_[reqId] = callback;
+    var timeoutSeconds = (typeof opt_timeoutSeconds !== 'undefined' ?
+        opt_timeoutSeconds : u2f.EXTENSION_TIMEOUT_SEC);
+    var req = u2f.formatRegisterRequest_(
+          appId, registeredKeys, registerRequests, timeoutSeconds, reqId);
+    console.log("sendRegReq", req);
+      port.postMessage(req);
+      console.log("returned from post", callback);
+
+
+Binding input {"UserName":"tomcjones","AppId":"https://localhost:44371","Challenge":"7hochY2r9CW6KDXXsRQjq774Brst1udfOf7HR2nst_Q","Version":"U2F_V2","jsonData":"{\"PublicKeyCredentialRpEntity\":\"https://localhost:44371\",\"PublicKeyCredentialUserEntity\":\"tomcjones\",\"ChallengeBuffer\":\"7hochY2r9CW6KDXXsRQjq774Brst1udfOf7HR2nst_Q\",\"Timeout\":0,\"AuthenticatorSelectionCriteria\":null,\"AttestationConveyancePreference\":null,\"AuthenticationExtensionsClientInputs\":{\"AppID\":\"https://localhost:44371\",\"Version\":\"U2F_V2\"}}","DeviceResponse":null}
+
+sendRegReq 
+{type: "u2f_register_request", appId: "https://localhost:44371", registerRequests: Array(1), registeredKeys: Array(0), timeoutSeconds: 30, …}
+appId
+:
+"https://localhost:44371"
+registerRequests
+:
+[{…}]
+registeredKeys
+:
+[]
+requestId
+:
+2
+timeoutSeconds
+:
+30
+type
+:
+"u2f_register_request"
+__proto__
+:
+Object
+
+Binding callback 
+{registrationData: "BQTPaV1-p01UtzD8xNxTbfLzL45mldYBFBPvAYjaq7G4nDt5tS…rPMcCIGbXY7WnHkr34AtO4qG7IeYxsFaRGA8ZOsL3Aet59tDk", challenge: "7hochY2r9CW6KDXXsRQjq774Brst1udfOf7HR2nst_Q", version: "U2F_V2", clientData: "eyJ0eXAiOiJuYXZpZ2F0b3IuaWQuZmluaXNoRW5yb2xsbWVudC…2FsaG9zdDo0NDM3MSIsImNpZF9wdWJrZXkiOiJ1bnVzZWQifQ"}
+challenge
+:
+"7hochY2r9CW6KDXXsRQjq774Brst1udfOf7HR2nst_Q"
+clientData
+:
+"eyJ0eXAiOiJuYXZpZ2F0b3IuaWQuZmluaXNoRW5yb2xsbWVudCIsImNoYWxsZW5nZSI6Ijdob2NoWTJyOUNXNktEWFhzUlFqcTc3NEJyc3QxdWRmT2Y3SFIybnN0X1EiLCJvcmlnaW4iOiJodHRwczovL2xvY2FsaG9zdDo0NDM3MSIsImNpZF9wdWJrZXkiOiJ1bnVzZWQifQ"
+registrationData
+:
+"BQTPaV1-p01UtzD8xNxTbfLzL45mldYBFBPvAYjaq7G4nDt5tSmTi63ILUleV6ZL-TGqRYg6miZZAqDqefGMLyUoQEYnjNPUorlrwFSHSuNAb-O0Jqj5jlB-Mg2O1YS3Fgbq7CKIUQEQ6Z1JhAkS78al26YxYTgYFLkNrmXJ5461YNwwggJKMIIBMqADAgECAgQSSnL-MA0GCSqGSIb3DQEBCwUAMC4xLDAqBgNVBAMTI1l1YmljbyBVMkYgUm9vdCBDQSBTZXJpYWwgNDU3MjAwNjMxMCAXDTE0MDgwMTAwMDAwMFoYDzIwNTAwOTA0MDAwMDAwWjAsMSowKAYDVQQDDCFZdWJpY28gVTJGIEVFIFNlcmlhbCAyNDk0MTQ5NzIxNTgwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQ9ixu9L8v2CG4QdHFgFGhIQVPBxtO0topehV5uQHV-4ivNiYi_O-_XzfIcsL9dehUNhEr-mBA8bGYH2fquKHwCozswOTAiBgkrBgEEAYLECgIEFTEuMy42LjEuNC4xLjQxNDgyLjEuMTATBgsrBgEEAYLlHAIBAQQEAwIFIDANBgkqhkiG9w0BAQsFAAOCAQEAoU8e6gB29rhHahCivnLmDQJxu0ZbLfv8fBvRLTUZiZFwMmMdeV0Jf6MKJqMlY06FchvC0BqGMD9rwHXlmXMZ4SIUiwSW7sjR9PlM9BEN5ibCiUQ9Hw9buyOcoT6B0dWqnfWvjjYSZHW_wjrwYoMVclJ2L_aIebzw71eNVdZ_lRtPMrY8iupbD5nGfX2BSn_1pvUt-D6JSjpdnIuC5_i8ja9MgBdf-Jcv2nkzPsRl2AbqzJSPG6siBFqVVYpIwgIm2sAD1B-8ngXqKKa7XhCkneBgoKT2omdqNNaMSr6MYYdDVbkCfoKMqeBksALWLo2M8HRJIXU9NePIfF1XeUU-dzBFAi
+EAn2R1eJmVPsVGTqFQgJeVHj4ljufqHKONCt8h2ZOrPMcCIGbXY7WnHkr34AtO4qG7IeYxsFaRGA8ZOsL3Aet59tDk"
+version
+:
+"U2F_V2"
+
+from web page
+{"registrationData":"BQTXZ0g_8_qTMJUy73Di2kt0RGSevBdgV1nlnW9R5HZj5IrsP4xdS0R8Vjt9XxwFEiel7PEsW4UlhWGBj7fsXlvuQGvcOgTVE2GvFGH9TblDZrKk88OfW-R-nt-ZxgIdzG349o2k_q-pH97-0Wn84viAF-4bL3YiQ_nz4RRTEWMC7PYwggJKMIIBMqADAgECAgQSSnL-MA0GCSqGSIb3DQEBCwUAMC4xLDAqBgNVBAMTI1l1YmljbyBVMkYgUm9vdCBDQSBTZXJpYWwgNDU3MjAwNjMxMCAXDTE0MDgwMTAwMDAwMFoYDzIwNTAwOTA0MDAwMDAwWjAsMSowKAYDVQQDDCFZdWJpY28gVTJGIEVFIFNlcmlhbCAyNDk0MTQ5NzIxNTgwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQ9ixu9L8v2CG4QdHFgFGhIQVPBxtO0topehV5uQHV-4ivNiYi_O-_XzfIcsL9dehUNhEr-mBA8bGYH2fquKHwCozswOTAiBgkrBgEEAYLECgIEFTEuMy42LjEuNC4xLjQxNDgyLjEuMTATBgsrBgEEAYLlHAIBAQQEAwIFIDANBgkqhkiG9w0BAQsFAAOCAQEAoU8e6gB29rhHahCivnLmDQJxu0ZbLfv8fBvRLTUZiZFwMmMdeV0Jf6MKJqMlY06FchvC0BqGMD9rwHXlmXMZ4SIUiwSW7sjR9PlM9BEN5ibCiUQ9Hw9buyOcoT6B0dWqnfWvjjYSZHW_wjrwYoMVclJ2L_aIebzw71eNVdZ_lRtPMrY8iupbD5nGfX2BSn_1pvUt-D6JSjpdnIuC5_i8ja9MgBdf-Jcv2nkzPsRl2AbqzJSPG6siBFqVVYpIwgIm2sAD1B-8ngXqKKa7XhCkneBgoKT2omdqNNaMSr6MYYdDVbkCfoKMqeBksALWLo2M8HRJIXU9NePIfF1XeUU-dzBFAi
+AvmDZk4l3IbIx64mTE8r7bWXcZ8C4pjHiY1R8TYth2cgIhAJxQY7PTpBwdThbCIH0JIY2WS8S87ItP6BGvycOWZuhv",
+"challenge":"7hochY2r9CW6KDXXsRQjq774Brst1udfOf7HR2nst_Q",
+"version":"U2F_V2",
+"clientData":"eyJ0eXAiOiJuYXZpZ2F0b3IuaWQuZmluaXNoRW5yb2xsbWVudCIsImNoYWxsZW5nZSI6Ijdob2NoWTJyOUNXNktEWFhzUlFqcTc3NEJyc3QxdWRmT2Y3SFIybnN0X1EiLCJvcmlnaW4iOiJodHRwczovL2xvY2FsaG9zdDo0NDM3MSIsImNpZF9wdWJrZXkiOiJ1bnVzZWQifQ"}
