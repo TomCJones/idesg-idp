@@ -15,6 +15,7 @@ using IDESGidp.Models;
 using IDESGidp.Models.ManageViewModels;
 using IDESGidp.Services;
 using static IDESGidp.Services.WebAuthnHelperExt;
+using static IDESGidp.Services.ConsentReceipt;
 
 namespace IDESGidp.Controllers
 {
@@ -105,6 +106,47 @@ namespace IDESGidp.Controllers
             }
 
             StatusMessage = "Your profile has been updated";
+
+            ProfileResponse profileResp = new ProfileResponse
+            {
+                version = "KI-CR-v1.1.0",
+                jurisdiction = "WA",
+                consentTimestamp = DateTime.UtcNow.ToString("o"),
+                collectionMethod = "user input",
+                consentReceiptID = Guid.NewGuid().ToString(),
+                language = "en",
+                piiPrincipalId = user.UserName,
+                piiControllers = new jsonController[]
+                {
+                    new jsonController { piiController = "IDESGidp",
+                    contact = "jerry",
+                        email="jerry@ca0.net",
+                        address="if required there is a class of address lists, like kids soccer, that would be in violation",
+                        phone="someone needs to think this thing thru!"}
+                    },
+                policyUrl = "http://tomjones.us/CRpolicy",
+                services = new jsonService[]
+                {
+                    new jsonService {
+                        service = "IdP",
+                        purposes = new jsonPurpose[]
+                        {
+                            new jsonPurpose {
+                            purpose = "IdP",
+                            purposeCategory= new string[] {"1 - Core Function" },
+                            consentType="EXPLICIT",
+                            piiCategory = new string[] {"2 - Contact" },
+                            primaryPurpose= true,
+                            termination="one year after last use",
+                            thirdPartyDisclosure = false
+                            }
+                        }
+                    }
+                },
+                sensitive = "false"
+            };
+
+            StatusMessage = JsonConvert.SerializeObject(profileResp);
             return RedirectToAction(nameof(Index));
         }
 
@@ -416,7 +458,7 @@ namespace IDESGidp.Controllers
 
             return RedirectToAction(nameof(ShowRecoveryCodes));
         }
-        
+
         [HttpGet]
         public async Task<IActionResult> EnableU2F()
         {
@@ -427,7 +469,7 @@ namespace IDESGidp.Controllers
             }
 
             var model = new EnableWebAuthNViewModel();
- //           await LoadSharedKeyAndQrCodeUriAsync(user, model);
+            //           await LoadSharedKeyAndQrCodeUriAsync(user, model);
 
             return View(model);
         }
@@ -453,7 +495,7 @@ namespace IDESGidp.Controllers
                 RegResponse response = JsonConvert.DeserializeObject<RegResponse>(jsonRet);
 
 
-                string[] recoveryCodes = new string[] { response.RegistrationData, response.ClientData, response.Challenge, response.Version};
+                string[] recoveryCodes = new string[] { response.RegistrationData, response.ClientData, response.Challenge, response.Version };
                 TempData[RecoveryCodesKey] = recoveryCodes;
 
                 int RecoveryCodesLeft = await _userManager.CountRecoveryCodesAsync(user);
@@ -516,7 +558,7 @@ namespace IDESGidp.Controllers
             }
 
             var model = new EnableWebAuthNViewModel();
-//            await LoadSharedKeyAndQrCodeUriAsync(user, model);
+            //            await LoadSharedKeyAndQrCodeUriAsync(user, model);
 
             return View(model);
         }
@@ -533,12 +575,12 @@ namespace IDESGidp.Controllers
 
             if (!ModelState.IsValid)
             {
-//                await LoadSharedKeyAndQrCodeUriAsync(user, model);
+                //                await LoadSharedKeyAndQrCodeUriAsync(user, model);
                 return View(model);
             }
             return View(model);
         }
-        
+
         [HttpGet]
         public IActionResult ShowRecoveryCodes()
         {

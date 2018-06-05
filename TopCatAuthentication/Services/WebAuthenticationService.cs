@@ -20,7 +20,7 @@ namespace TopCatAuthentication.Services
             UserManager<User> userManager,
             ILogger<WebAuthenticationService> logger)
         {
-            Origin = "";
+            Origin = "";  // not yet in a response - need to get from the other task or via the individual calls!
             _dataContext = userRepository;
             _userManager = userManager;
             _logger = logger;

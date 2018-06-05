@@ -7,35 +7,83 @@
 <h4>@ViewData["Title"]</h4>
 @Html.Partial("_StatusMessage", Model.StatusMessage)
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-9">
         <form method="post">
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Username"></label>
-                <input asp-for="Username" class="form-control" disabled />
-            </div>
-            <div class="form-group">
-                <label asp-for="Email"></label>
-                @if (Model.IsEmailConfirmed)
-                {
-                    <div class="input-group">
-                        <input asp-for="Email" class="form-control" />
-                        <span class="input-group-addon" aria-hidden="true"><span class="glyphicon glyphicon-ok text-success"></span></span>
-                    </div>
-                }
-                else
-                {
-                    <input asp-for="Email" class="form-control" />
-                    <button asp-action="SendVerificationEmail" class="btn btn-link">Send verification email</button>
-                }
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PhoneNumber"></label>
-                <input asp-for="PhoneNumber" class="form-control" />
-                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-            </div>
-            <button type="submit" class="btn btn-default">Save</button>
+            <table>
+                <thead style="text-decoration:underline">
+                <th>
+                    Data to be Saved
+                </th>
+                <th>
+                    Privacy information
+                </th>
+                </thead>
+                <tbody style="border-right:10px">
+                    <tr>
+                        <td>
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <div class="form-group" style="padding-right:3px">
+                                <label asp-for="Username"></label>
+                                <input asp-for="Username" class="form-control" disabled />
+                            </div>
+                        </td>
+                        <td>
+                            The user name is required and will be displayed on any page associated
+                            with the user. It has no other use and will never be shared.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <label asp-for="Email"></label>
+                                @if (Model.IsEmailConfirmed)
+                                {
+                                    <div class="input-group" style="padding-right:5px">
+                                        <input asp-for="Email" class="form-control" />
+                                        <span class="input-group-addon" aria-hidden="true"><span class="glyphicon glyphicon-ok text-success"></span></span>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <input asp-for="Email" class="form-control" style="padding-right:3px" />
+                                    <button asp-action="SendVerificationEmail" class="btn btn-link">Send verification email</button>
+                                }
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </td>
+                        <td>
+                            The Email address or the phone number must be included if the user is to able
+                            to recover a lost account or to be notified any any problmes with the account.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group" style="padding-right:5px">
+                                <label asp-for="PhoneNumber"></label>
+                                <input asp-for="PhoneNumber" class="form-control" />
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                            </div>
+                        </td>
+                        <td>
+                            Must be present if the Email address is not and the user wants recovery or notification.
+                        </td>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <label asp-for="SendReceipt">
+                                    <input asp-for="SendReceipt" />
+                                    @Html.DisplayNameFor(m => m.SendReceipt)
+                                </label>
+
+                                <button type="submit" class="btn btn-default">Save</button>
+                            </div>
+                        </td>
+                        <td>
+                            This actions will save your data on the server and send notification if the
+                            check box is checked.
+                        </td>
+                    </tr>
+            </table>
         </form>
     </div>
 </div>

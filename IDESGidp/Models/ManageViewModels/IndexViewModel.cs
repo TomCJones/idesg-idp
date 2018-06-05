@@ -20,6 +20,9 @@ namespace IDESGidp.Models.ManageViewModels
         [Display(Name = "Phone number")]
         public string PhoneNumber { get; set; }
 
+        [Display(Name = "Send Receipt")]
+        public bool SendReceipt { get; set; }
+
         public string StatusMessage { get; set; }
     }
 }
