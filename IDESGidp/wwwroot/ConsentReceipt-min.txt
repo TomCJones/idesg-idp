@@ -1,0 +1,185 @@
+﻿<?xml version="1.0"?>
+<xsl:stylesheet version='1.0' xmlns:xsl='http://www.w3.org/1999/XSL/Transform'>
+
+  <xsl:output method='html' indent='yes' doctype-public='//W3C//DTD HTML 3.2  FINAL//EN' />
+  <xsl:template match='/'>
+    <HTML>
+      <HEAD>
+        <TITLE>Consent Receipt with minimal formating</TITLE>
+      </HEAD>
+      <BODY>
+        <table border='1'>
+          <tr>
+            <td colspan='2'>
+              <H3 style='text-align:center'>
+                Consent Receipt with minimal formating
+              </H3>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              User (piiPrincipalId)
+            </td>
+            <td>
+              <xsl:value-of select='ConsentReceipt/piiPrincipalId' />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Collection Method
+            </td>
+            <td>
+              <xsl:value-of select='ConsentReceipt/collectionMethod' />
+            </td>
+          </tr>
+
+          <tr height='10'>
+            <td colspan='2' height='10'>
+              <H4 style='text-align:center; padding:0; border:0'>
+                Site acquiring data (piiController)
+              </H4>
+            </td>
+          </tr>
+          <xsl:apply-templates select ='ConsentReceipt/piiControllers' />
+
+          <tr height='10'>
+            <td colspan='2' height='10'>
+              <H4 style='text-align:center; padding:0; border:0'>
+                Site acquiring data (purposes)
+              </H4>
+            </td>
+          </tr>
+          <xsl:apply-templates select ='ConsentReceipt/services' />
+
+          <tr>
+            <td>
+              Version
+            </td>
+            <td>
+              <xsl:value-of select='ConsentReceipt/version' />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Jurisdiction
+            </td>
+            <td>
+              <xsl:value-of select='ConsentReceipt/jurisdiction' />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Consent Timestamp
+            </td>
+            <td>
+              <xsl:value-of select='ConsentReceipt/consentTimestamp' />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              consentReceipt ID
+            </td>
+            <td>
+              <xsl:value-of select='ConsentReceipt/consentReceiptID' />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Language
+            </td>
+            <td>
+              <xsl:value-of select='ConsentReceipt/language' />
+            </td>
+          </tr>
+
+        </table>
+        <div title='footer'>
+          Version: <xsl:value-of select='ConsentReceipt/version' />
+        </div>
+      </BODY>
+    </HTML>
+  </xsl:template>
+
+  <xsl:template match='piiControllers'>
+    <tr>
+      <td>
+        |> Contact
+      </td>
+      <td>
+        <xsl:value-of select='contact' />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        |> address
+      </td>
+      <td>
+        <xsl:value-of select='address' />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        |> email
+      </td>
+      <td>
+        <xsl:value-of select='email' />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        |> phone
+      </td>
+      <td>
+        <xsl:value-of select='phone' />
+      </td>
+    </tr>
+  </xsl:template>
+
+  <xsl:template match='services'>
+    <tr>
+      <td>
+        |> Service
+      </td>
+      <td>
+        <xsl:value-of select='service' />
+      </td>
+    </tr>
+
+    <xsl:apply-templates select ='ConsentReceipt/services/purposes' />
+  </xsl:template>
+
+  <xsl:template match='purposes'>
+    <tr>
+      <td>
+        |>> purpose
+      </td>
+      <td>
+        <xsl:value-of select='purpose' />
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        |>> purposeCategory
+      </td>
+      <td>
+        <xsl:value-of select='purposeCategory' />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        |>> consentType
+      </td>
+      <td>
+        <xsl:value-of select='consentType' />
+      </td>
+    </tr>
+  </xsl:template>
+
+</xsl:stylesheet>

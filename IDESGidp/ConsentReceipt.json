@@ -1,9 +1,9 @@
 ﻿{
   "version": "KI-CR-v1.1.0",
   "jurisdiction": "WA",
-  "consentTimestamp": "2018-06-04T02:34:12.9239336Z",
+  "consentTimestamp": "2018-06-04T17:36:26.6852315Z",
   "collectionMethod": "user input",
-  "consentReceiptID": "25696cbc-9bd4-4abf-9774-7c57dd5bedc6",
+  "consentReceiptID": "3b955c80-a15b-4880-a71f-e2048c710570",
   "language": "en",
   "piiPrincipalId": "tomcjones",
   "piiControllers": [
@@ -26,10 +26,11 @@
           "consentType": "EXPLICIT",
           "piiCategory": [ "2 - Contact" ],
           "primaryPurpose": true,
-          "termination": "one year after last use"
+          "termination": "one year after last use",
+          "thirdPartyDisclosure": false
         }
       ]
     }
   ],
   "sensitive": "false"
-}
+} 

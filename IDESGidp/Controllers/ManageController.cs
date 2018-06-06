@@ -121,10 +121,10 @@ namespace IDESGidp.Controllers
                     new jsonController { piiController = "IDESGidp",
                     contact = "jerry",
                         email="jerry@ca0.net",
-                        address="if required there is a class of address lists, like kids soccer, that would be in violation",
+                        address="requiring this eliminates a class small users",
                         phone="someone needs to think this thing thru!"}
                     },
-                policyUrl = "http://tomjones.us/CRpolicy",
+                policyUrl = "http:idesg-idp.azurewebsites.net/Home/About",
                 services = new jsonService[]
                 {
                     new jsonService {
@@ -132,13 +132,24 @@ namespace IDESGidp.Controllers
                         purposes = new jsonPurpose[]
                         {
                             new jsonPurpose {
-                            purpose = "IdP",
+                            purpose = "Authenticate User",
                             purposeCategory= new string[] {"1 - Core Function" },
                             consentType="EXPLICIT",
                             piiCategory = new string[] {"2 - Contact" },
                             primaryPurpose= true,
-                            termination="one year after last use",
+                            termination="one year after last use; or click this link http:idesg-idp.azurewebsites.net/Home/About",
                             thirdPartyDisclosure = false
+                            },
+                            new jsonPurpose
+                            {
+                                purpose="Federated Logon",
+                                purposeCategory= new string[] {"2 - not clear to me" },
+                                consentType="IMPLICIT",
+                                piiCategory=new string[] {"2 - Contact", "3 - More stuff"},
+                                primaryPurpose=false,
+                                termination="same as primary purpose",
+                                thirdPartyDisclosure = true,
+                                thirdPartyName="this will be the site you visit"
                             }
                         }
                     }
@@ -146,7 +157,12 @@ namespace IDESGidp.Controllers
                 sensitive = "false"
             };
 
-            StatusMessage = JsonConvert.SerializeObject(profileResp);
+            string jsonResp = JsonConvert.SerializeObject(profileResp);
+            if (model.SendReceipt == true)
+            { StatusMessage = JsonConvert.DeserializeXmlNode(jsonResp, "ConsentReceipt", true).OuterXml; }
+            else
+            {  StatusMessage = jsonResp;}
+           
             return RedirectToAction(nameof(Index));
         }
 
