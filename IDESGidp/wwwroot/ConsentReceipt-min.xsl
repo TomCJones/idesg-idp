@@ -36,7 +36,7 @@
           <tr style='height:1px'>
             <td colspan='2' style='height:1px;border:0;padding:0'>
               <p style='text-align:center; font-size:large; font-weight:bold; height:1px; padding:0; border:0'>
-                Site acquiring data (piiController large)
+                Site(s) acquiring data (piiController)
               </p>
             </td>
           </tr>
@@ -56,14 +56,36 @@
               <p style='text-align:center; font-size:large; font-weight:bold; height:1px; padding:0; border:0'>
                 General information about this receipt
               </p>
+            </td>  
+          </tr>
+          
+          <tr>
+            <td>
+              Sensitive + category
+            </td>
+            <td>
+              <xsl:value-of select='ConsentReceipt/sensitive' />
+              +
+              <xsl:value-of select='ConsentReceipt/spiCat' />
             </td>
           </tr>
+          
+
           <tr>
             <td>
               Jurisdiction
             </td>
             <td>
               <xsl:value-of select='ConsentReceipt/jurisdiction' />
+            </td>
+          </tr>
+          
+                    <tr>
+            <td>
+              policyUrl
+            </td>
+            <td>
+              <xsl:value-of select='ConsentReceipt/policyUrl' />
             </td>
           </tr>
 
@@ -75,7 +97,7 @@
               <xsl:value-of select='ConsentReceipt/consentTimestamp' />
             </td>
           </tr>
-        
+
           <tr>
             <td>
               consentReceipt ID
@@ -93,13 +115,13 @@
               <xsl:value-of select='ConsentReceipt/language' />
             </td>
           </tr>
-        
         </table>
-        <div>
-           Version:
-           <xsl:value-of select='ConsentReceipt/version' />
         
-      </div>
+        <div>
+          Version:
+          <xsl:value-of select='ConsentReceipt/version' />
+
+        </div>
       </BODY>
     </HTML>
   </xsl:template>
@@ -166,21 +188,28 @@
     <tr>
       <td style='padding-left:10px'>
         |> purpose
+        <xsl:choose>
+          <xsl:when test="string(primaryPurpose) = 'true'">
+          - primary
+        </xsl:when>      
+      </xsl:choose>
       </td>
       <td>
         <xsl:value-of select='purpose' />
       </td>
     </tr>
 
-    <tr>
-      <td style='padding-left:20px'>
-        |>> purposeCategory
-      </td>
-      <td>
-        <xsl:value-of select='purposeCategory' />
-      </td>
-    </tr>
-    
+    <xsl:for-each select='purposeCategory'>
+      <tr>
+        <td style='padding-left:20px'>
+          |>> purposeCategory
+        </td>
+        <td>
+          <xsl:value-of select='.' />
+        </td>
+      </tr>
+    </xsl:for-each>
+
     <tr>
       <td style='padding-left:20px'>
         |>> consentType
@@ -189,26 +218,19 @@
         <xsl:value-of select='consentType' />
       </td>
     </tr>
-  
+
+    <xsl:for-each select='piiCategory'>
       <tr>
-      <td style='padding-left:20px'>
-        |>> pii Data Category
-      </td>
-      <td>
-        <xsl:value-of select='piiCategory' />
-      </td>
-    </tr>
+        <td style='padding-left:20px'>
+          |>> pii Data Category
+        </td>
+        <td>
+          <xsl:value-of select='.' />
+        </td>
+      </tr>
+    </xsl:for-each>
 
     <tr>
-      <td style='padding-left:20px'>
-        |>> primaryPurpose
-      </td>
-      <td>
-        <xsl:value-of select='primaryPurpose' />
-      </td>
-    </tr>
-    
-      <tr>
       <td style='padding-left:20px'>
         |>> termination event
       </td>
@@ -216,7 +238,7 @@
         <xsl:value-of select='termination' />
       </td>
     </tr>
-  
+
   </xsl:template>
 
 </xsl:stylesheet>
