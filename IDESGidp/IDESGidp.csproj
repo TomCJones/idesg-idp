@@ -6,6 +6,11 @@
     <Copyright>2018 Tom Jones</Copyright>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\ConsentReceipt-min.txt" />
+    <Content Remove="wwwroot\ConsentReceipt.txt" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="IdentityServer4" Version="2.2.0" />

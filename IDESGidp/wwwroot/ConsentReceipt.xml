@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="ConsentReceipt-min.xsl" ?>
+<?xml-stylesheet type ="text/xsl" href="http://idesg-idp.azurewebsites.net/consentreceipt-min.xsl" ?>
 <ConsentReceipt>
   <version>KI-CR-v1.1.0</version>
   <jurisdiction>WA</jurisdiction>
-  <consentTimestamp>2018-06-06T21:59:57.8701013Z</consentTimestamp>
+  <consentTimestamp>2018-06-09T03:57:12.4958696Z</consentTimestamp>
   <collectionMethod>user input</collectionMethod>
-  <consentReceiptID>0b792c9c-66df-4176-bc4e-4626295e1fd9</consentReceiptID>
+  <consentReceiptID>93608965-6239-4a88-b719-518ae434fd5f</consentReceiptID>
   <language>en</language>
   <piiPrincipalId>tomcjones</piiPrincipalId>
   <piiControllers json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
     <piiController>IDESGidp</piiController>
     <contact>jerry</contact>
-    <address>requiring this eliminates a class small users</address>
+    <address>too restrictive for small sites</address>
     <email>jerry@ca0.net</email>
-    <phone>someone needs to think this thing thru!</phone>
+    <phone>too restrictive for small sites</phone>
   </piiControllers>
-  <policyUrl>http:idesg-idp.azurewebsites.net/Home/About</policyUrl>
+  <policyUrl>http://idesg-idp.azurewebsites.net/Home/About</policyUrl>
   <services json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
     <service>IdP</service>
     <purposes>
@@ -24,7 +24,7 @@
       <consentType>EXPLICIT</consentType>
       <piiCategory json:Array="true">2 - Contact</piiCategory>
       <primaryPurpose>true</primaryPurpose>
-      <termination>one year after last use; or click this link http:idesg-idp.azurewebsites.net/Home/About</termination>
+      <termination>http://idesg-idp.azurewebsites.net/Home/About</termination>
       <thirdPartyDisclosure>false</thirdPartyDisclosure>
     </purposes>
     <purposes>
@@ -34,9 +34,9 @@
       <piiCategory>2 - Contact</piiCategory>
       <piiCategory>3 - More stuff</piiCategory>
       <primaryPurpose>false</primaryPurpose>
-      <termination>same as primary purpose</termination>
+      <termination>http://idesg-idp.azurewebsites.net/Home/About</termination>
       <thirdPartyDisclosure>true</thirdPartyDisclosure>
-      <thirdPartyName>this will be the site you visit</thirdPartyName>
+      <thirdPartyName>this will be any sites you sign on with this identifier</thirdPartyName>
     </purposes>
   </services>
   <sensitive>false</sensitive>

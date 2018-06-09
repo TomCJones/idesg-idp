@@ -4,9 +4,12 @@
   <xsl:template match='/'>
     <HTML>
       <HEAD>
-        <TITLE>Consent Receipt with minimal formating</TITLE>
+        <TITLE>Consent Receipt min</TITLE>
       </HEAD>
       <BODY>
+        <button style='margin:6px 10px 6px 20px; padding:3px; background-color:lightblue'>Print Receipt</button>
+        <button style='margin:6px; padding:3px; background-color:lightblue'>Save Receipt</button>
+        <button style='margin:6px; padding:3px; background-color:lightblue'>Close Receipt</button>
         <table border='1'>
           <tr>
             <td colspan='2' style='border:0'>
@@ -56,20 +59,22 @@
               <p style='text-align:center; font-size:large; font-weight:bold; height:1px; padding:0; border:0'>
                 General information about this receipt
               </p>
-            </td>  
+            </td>
           </tr>
-          
+
           <tr>
             <td>
               Sensitive + category
             </td>
             <td>
               <xsl:value-of select='ConsentReceipt/sensitive' />
-              +
-              <xsl:value-of select='ConsentReceipt/spiCat' />
+              <xsl:if test='ConsentReceipt/spiCat'>
+                +
+                <xsl:value-of select='ConsentReceipt/spiCat' />
+              </xsl:if>
             </td>
           </tr>
-          
+
 
           <tr>
             <td>
@@ -79,13 +84,20 @@
               <xsl:value-of select='ConsentReceipt/jurisdiction' />
             </td>
           </tr>
-          
-                    <tr>
+
+          <tr>
             <td>
-              policyUrl
+              Policy Link
             </td>
-            <td>
-              <xsl:value-of select='ConsentReceipt/policyUrl' />
+             <td style='background-color:lightblue'>
+              <div>
+                <a>
+                  <xsl:attribute name='href'>
+                    <xsl:value-of select='ConsentReceipt/policyUrl' />
+                  </xsl:attribute>
+                  <xsl:value-of select='ConsentReceipt/policyUrl' />
+                </a>
+              </div>
             </td>
           </tr>
 
@@ -116,7 +128,7 @@
             </td>
           </tr>
         </table>
-        
+
         <div>
           Version:
           <xsl:value-of select='ConsentReceipt/version' />
@@ -190,9 +202,9 @@
         |> purpose
         <xsl:choose>
           <xsl:when test="string(primaryPurpose) = 'true'">
-          - primary
-        </xsl:when>      
-      </xsl:choose>
+            - primary
+          </xsl:when>
+        </xsl:choose>
       </td>
       <td>
         <xsl:value-of select='purpose' />
@@ -232,10 +244,17 @@
 
     <tr>
       <td style='padding-left:20px'>
-        |>> termination event
+        |>> termination link
       </td>
-      <td>
-        <xsl:value-of select='termination' />
+      <td style='background-color:lightblue'>
+        <div>
+          <a >
+            <xsl:attribute name='href'>
+              <xsl:value-of select='termination' />
+            </xsl:attribute>
+            <xsl:value-of select='termination' />
+          </a>
+        </div>
       </td>
     </tr>
 

@@ -1,33 +1,43 @@
 ﻿{
   "version": "KI-CR-v1.1.0",
   "jurisdiction": "WA",
-  "consentTimestamp": "2018-06-04T17:36:26.6852315Z",
+  "consentTimestamp": "2018-06-08T17:43:20.7681968Z",
   "collectionMethod": "user input",
-  "consentReceiptID": "3b955c80-a15b-4880-a71f-e2048c710570",
+  "consentReceiptID": "ce56a128-abd2-4edc-94f3-3d1b2efcb57d",
   "language": "en",
   "piiPrincipalId": "tomcjones",
   "piiControllers": [
     {
       "piiController": "IDESGidp",
       "contact": "jerry",
-      "address": "if required there is a class of address lists, like kids soccer, that would be in violation",
+      "address": "too restrictive for small sites",
       "email": "jerry@ca0.net",
-      "phone": "someone needs to think this thing thru!"
+      "phone": "too restrictive for small sites"
     }
   ],
-  "policyUrl": "http://tomjones.us/CRpolicy",
+  "policyUrl": "http:idesg-idp.azurewebsites.net/Home/About",
   "services": [
     {
       "service": "IdP",
       "purposes": [
         {
-          "purpose": "IdP",
+          "purpose": "Authenticate User",
           "purposeCategory": [ "1 - Core Function" ],
           "consentType": "EXPLICIT",
           "piiCategory": [ "2 - Contact" ],
           "primaryPurpose": true,
-          "termination": "one year after last use",
+          "termination": "http:idesg-idp.azurewebsites.net/Home/About",
           "thirdPartyDisclosure": false
+        },
+        {
+          "purpose": "Federated Logon",
+          "purposeCategory": [ "2 - not clear to me" ],
+          "consentType": "IMPLICIT",
+          "piiCategory": [ "2 - Contact", "3 - More stuff" ],
+          "primaryPurpose": false,
+          "termination": "same as primary purpose",
+          "thirdPartyDisclosure": true,
+          "thirdPartyName": "this will be the site you visit"
         }
       ]
     }

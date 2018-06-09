@@ -30,6 +30,9 @@ namespace IDESGidp.Controllers
         private readonly UrlEncoder _urlEncoder;
 
         private const string AuthenticatorUriFormat = "otpauth://totp/{0}:{1}?secret={2}&issuer={0}&digits=6";
+        private const string XmlHeader = @"<?xml version=""1.0""?>
+<?xml-stylesheet type =""text/xsl"" href=""http://idesg-idp.azurewebsites.net/consentreceipt-min.xsl"" ?>
+";
         private const string RecoveryCodesKey = nameof(RecoveryCodesKey);
 
         public ManageController(
@@ -121,24 +124,25 @@ namespace IDESGidp.Controllers
                     new jsonController { piiController = "IDESGidp",
                     contact = "jerry",
                         email="jerry@ca0.net",
-                        address="requiring this eliminates a class small users",
-                        phone="someone needs to think this thing thru!"}
+                        address="too restrictive for small sites",
+                        phone="too restrictive for small sites"}
                     },
-                policyUrl = "http:idesg-idp.azurewebsites.net/Home/About",
+                policyUrl = "http://idesg-idp.azurewebsites.net/Home/About",
                 services = new jsonService[]
                 {
                     new jsonService {
                         service = "IdP",
                         purposes = new jsonPurpose[]
                         {
-                            new jsonPurpose {
-                            purpose = "Authenticate User",
-                            purposeCategory= new string[] {"1 - Core Function" },
-                            consentType="EXPLICIT",
-                            piiCategory = new string[] {"2 - Contact" },
-                            primaryPurpose= true,
-                            termination="one year after last use; or click this link http:idesg-idp.azurewebsites.net/Home/About",
-                            thirdPartyDisclosure = false
+                            new jsonPurpose
+                            {
+                                purpose = "Authenticate User",
+                                purposeCategory= new string[] {"1 - Core Function" },
+                                consentType="EXPLICIT",
+                                piiCategory = new string[] {"2 - Contact" },
+                                primaryPurpose= true,
+                                termination="http://idesg-idp.azurewebsites.net/Home/About",
+                                thirdPartyDisclosure = false
                             },
                             new jsonPurpose
                             {
@@ -147,9 +151,9 @@ namespace IDESGidp.Controllers
                                 consentType="IMPLICIT",
                                 piiCategory=new string[] {"2 - Contact", "3 - More stuff"},
                                 primaryPurpose=false,
-                                termination="same as primary purpose",
+                                termination="http://idesg-idp.azurewebsites.net/Home/About",
                                 thirdPartyDisclosure = true,
-                                thirdPartyName="this will be the site you visit"
+                                thirdPartyName="this will be any sites you sign on with this identifier"
                             }
                         }
                     }
@@ -157,12 +161,14 @@ namespace IDESGidp.Controllers
                 sensitive = "false"
             };
 
-            string jsonResp = JsonConvert.SerializeObject(profileResp);
+            StatusMessage = JsonConvert.SerializeObject(profileResp);
             if (model.SendReceipt == true)
-            { StatusMessage = JsonConvert.DeserializeXmlNode(jsonResp, "ConsentReceipt", true).OuterXml; }
-            else
-            {  StatusMessage = jsonResp;}
-           
+            {
+                string sTemp = XmlHeader + JsonConvert.DeserializeXmlNode(StatusMessage, "ConsentReceipt", true).OuterXml;
+                byte[] bStatus = Encoding.ASCII.GetBytes(sTemp);
+                return new FileContentResult(bStatus, "application/xml");
+            }
+
             return RedirectToAction(nameof(Index));
         }
 

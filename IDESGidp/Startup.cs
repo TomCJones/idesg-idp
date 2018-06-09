@@ -48,7 +48,8 @@ namespace IDESGidp
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();   // this needs fixed - i have not been able to remove it
 
-            services.AddMvc();
+            services.AddMvc()
+                .AddXmlDataContractSerializerFormatters();        // nneded to sent or receive XML
 
             // configure identity server with in-memory stores, keys, clients and scopes
             services.AddIdentityServer()

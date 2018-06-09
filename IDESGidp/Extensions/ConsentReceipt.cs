@@ -1,7 +1,6 @@
 ﻿// ConsentReceipt helper clases (c) 2018 tom jones
 
 using System;
-using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace IDESGidp.Services
@@ -79,8 +78,6 @@ namespace IDESGidp.Services
             public string fax { get; set; }
             [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
             public string piiControllerURL { get; set; }
-            //            [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-            //            public IDictionary<string, object> type { get; set; }
         }
 
         [JsonObject]
