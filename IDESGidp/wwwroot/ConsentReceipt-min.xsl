@@ -5,11 +5,12 @@
     <HTML>
       <HEAD>
         <TITLE>Consent Receipt min</TITLE>
+      <script type='test/javascript' src='https://localhost:44371/ConsentReceipt.js' />
       </HEAD>
       <BODY>
-        <button style='margin:6px 10px 6px 20px; padding:3px; background-color:lightblue'>Print Receipt</button>
-        <button style='margin:6px; padding:3px; background-color:lightblue'>Save Receipt</button>
-        <button style='margin:6px; padding:3px; background-color:lightblue'>Close Receipt</button>
+        <button onclick='fuction crPrint();' style='margin:6px 10px 6px 20px; padding:3px; background-color:lightblue'>Print Receipt</button>
+        <button onclick='fuction crSave();' style='margin:6px; padding:3px; background-color:lightblue'>Save Receipt</button>
+        <button onclick='fuction crBack();' style='margin:6px; padding:3px; background-color:lightblue'>Close Receipt</button>
         <table border='1'>
           <tr>
             <td colspan='2' style='border:0'>
