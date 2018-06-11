@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using System.Xml;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -31,7 +32,7 @@ namespace IDESGidp.Controllers
 
         private const string AuthenticatorUriFormat = "otpauth://totp/{0}:{1}?secret={2}&issuer={0}&digits=6";
         private const string XmlHeader = @"<?xml version=""1.0""?>
-<?xml-stylesheet type =""text/xsl"" href=""http://idesg-idp.azurewebsites.net/consentreceipt-min.xsl"" ?>
+<?xml-stylesheet type =""text/xsl"" href=""QQQ/consentreceipt-min.xsl"" ?>
 ";
         private const string RecoveryCodesKey = nameof(RecoveryCodesKey);
 
@@ -164,11 +165,24 @@ namespace IDESGidp.Controllers
             StatusMessage = JsonConvert.SerializeObject(profileResp);
             if (model.SendReceipt == true)
             {
-                string sTemp = XmlHeader + JsonConvert.DeserializeXmlNode(StatusMessage, "ConsentReceipt", true).OuterXml;
-                byte[] bStatus = Encoding.ASCII.GetBytes(sTemp);
-                return new FileContentResult(bStatus, "application/xml");
+                try
+                {
+                    string QQQreplace = HttpContext.Request.Scheme + "://" +  HttpContext.Request.Host.ToString();
+                    XmlDocument xOut = JsonConvert.DeserializeXmlNode(StatusMessage, "ConsentReceipt", true);
+                    XmlNode xCTS = xOut.SelectSingleNode("consentTimestamp");
+                    XmlElement xElem = xOut.CreateElement("json");
+                    XmlText xText = xOut.CreateTextNode(StatusMessage);
+                    xOut.DocumentElement.AppendChild(xElem);
+                    xOut.DocumentElement.LastChild.AppendChild(xText);
+                    string sTemp = XmlHeader.Replace("QQQ",QQQreplace) + xOut.OuterXml;
+                    byte[] bStatus = Encoding.ASCII.GetBytes(sTemp);
+                    return new FileContentResult(bStatus, "application/xml");
+                }
+                catch (Exception ex)
+                {
+                    StatusMessage = "Faild to create JSON or XML object for created [JSONOBJECT] -- " + ex.Message;
+                }
             }
-
             return RedirectToAction(nameof(Index));
         }
 
