@@ -5,10 +5,13 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using System.Xml;
+using System.Xml.Xsl;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Html;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
@@ -17,6 +20,7 @@ using IDESGidp.Models.ManageViewModels;
 using IDESGidp.Services;
 using static IDESGidp.Services.WebAuthnHelperExt;
 using static IDESGidp.Services.ConsentReceipt;
+
 
 namespace IDESGidp.Controllers
 {
@@ -111,28 +115,32 @@ namespace IDESGidp.Controllers
 
             StatusMessage = "Your profile has been updated";
 
-            ProfileResponse profileResp = new ProfileResponse
+            if (model.SendReceipt == true)
             {
-                version = "KI-CR-v1.1.0",
-                jurisdiction = "WA",
-                consentTimestamp = DateTime.UtcNow.ToString("o"),
-                collectionMethod = "user input",
-                consentReceiptID = Guid.NewGuid().ToString(),
-                language = "en",
-                piiPrincipalId = user.UserName,
-                piiControllers = new jsonController[]
+                try
                 {
+                    ProfileResponse profileResp = new ProfileResponse
+                    {
+                        version = "KI-CR-v1.1.0",
+                        jurisdiction = "WA",
+                        consentTimestamp = DateTime.UtcNow.ToString("o"),
+                        collectionMethod = "user input",
+                        consentReceiptID = Guid.NewGuid().ToString(),
+                        language = "en",
+                        piiPrincipalId = user.UserName,
+                        piiControllers = new jsonController[]
+                    {
                     new jsonController { piiController = "IDESGidp",
                     contact = "jerry",
                         email="jerry@ca0.net",
                         address="too restrictive for small sites",
                         phone="too restrictive for small sites"}
                     },
-                policyUrl = "http://idesg-idp.azurewebsites.net/Home/About",
-                services = new jsonService[]
-                {
+                        policyUrl = "https://idesg-idp.azurewebsites.net/Home/About",
+                        services = new jsonService[]
+                    {
                     new jsonService {
-                        service = "IdP",
+                        service = "Identifier Provider",
                         purposes = new jsonPurpose[]
                         {
                             new jsonPurpose
@@ -142,7 +150,7 @@ namespace IDESGidp.Controllers
                                 consentType="EXPLICIT",
                                 piiCategory = new string[] {"2 - Contact" },
                                 primaryPurpose= true,
-                                termination="http://idesg-idp.azurewebsites.net/Home/About",
+                                termination="https://idesg-idp.azurewebsites.net/Home/About",
                                 thirdPartyDisclosure = false
                             },
                             new jsonPurpose
@@ -152,31 +160,45 @@ namespace IDESGidp.Controllers
                                 consentType="IMPLICIT",
                                 piiCategory=new string[] {"2 - Contact", "3 - More stuff"},
                                 primaryPurpose=false,
-                                termination="http://idesg-idp.azurewebsites.net/Home/About",
+                                termination="https://idesg-idp.azurewebsites.net/Home/About",
                                 thirdPartyDisclosure = true,
-                                thirdPartyName="this will be any sites you sign on with this identifier"
+                                thirdPartyName="this will be any sites you sign onto with this identifier"
                             }
                         }
                     }
-                },
-                sensitive = "false"
-            };
+                    },
+                        sensitive = "false"
+                    };
 
-            StatusMessage = JsonConvert.SerializeObject(profileResp);
-            if (model.SendReceipt == true)
-            {
-                try
-                {
-                    string QQQreplace = HttpContext.Request.Scheme + "://" +  HttpContext.Request.Host.ToString();
-                    XmlDocument xOut = JsonConvert.DeserializeXmlNode(StatusMessage, "ConsentReceipt", true);
-                    XmlNode xCTS = xOut.SelectSingleNode("consentTimestamp");
-                    XmlElement xElem = xOut.CreateElement("json");
-                    XmlText xText = xOut.CreateTextNode(StatusMessage);
-                    xOut.DocumentElement.AppendChild(xElem);
-                    xOut.DocumentElement.LastChild.AppendChild(xText);
-                    string sTemp = XmlHeader.Replace("QQQ",QQQreplace) + xOut.OuterXml;
-                    byte[] bStatus = Encoding.ASCII.GetBytes(sTemp);
-                    return new FileContentResult(bStatus, "application/xml");
+                    string jsonOut = JsonConvert.SerializeObject(profileResp);
+                    XmlDocument xOut = JsonConvert.DeserializeXmlNode(jsonOut, "ConsentReceipt", true);
+
+                    XmlWriterSettings settings = new XmlWriterSettings
+                    {
+                        Indent = true,
+                        ConformanceLevel = ConformanceLevel.Auto                        // allows xml fragments
+                    };
+                    StringBuilder xml = new StringBuilder();
+                    XmlWriter writer = XmlWriter.Create(xml, settings);
+
+                    XslCompiledTransform transform = new XslCompiledTransform();
+                    XsltSettings xslSettings = new XsltSettings
+                    {
+                        EnableScript = true
+                    };
+                    transform.Load("wwwroot\\ConsentReceipt-min.xsl", xslSettings, null);  //  TODO make xsl a variable for other transforms
+                    transform.Transform(xOut, writer);
+                    writer.Flush();
+                    string sOut = xml.ToString();
+
+                    ConsentReceiptViewModel crModel = new ConsentReceiptViewModel
+                    {
+                        Insert = sOut,
+                        Json = jsonOut,
+                        CrGuid = "ConsentReceipt" + profileResp.consentReceiptID + ".json"
+                };
+                    return View(nameof(ConsentReceipt), crModel);
+
                 }
                 catch (Exception ex)
                 {
@@ -184,6 +206,12 @@ namespace IDESGidp.Controllers
                 }
             }
             return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ConsentReceipt(ConsentReceiptViewModel model)
+        {
+            return View(model);
         }
 
         [HttpPost]

@@ -1,0 +1,35 @@
+﻿@model IDESGidp.Models.ManageViewModels.ConsentReceiptViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ConsentReceipt</title>
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-md-4" style="padding:4px;">
+            <span onclick="crPrint();" style='border: 1px 1px; margin:6px 10px 6px 20px; padding:3px; background-color:lightblue'>Print Receipt</span>
+            <span style='margin:6px; padding:3px; background-color:lightblue'><a id="jsonDL" href="http://foo.bar" download=@Model.CrGuid>Save Receipt</a></span>
+            <span onclick="crBack();" style='margin:6px; padding:3px; background-color:lightblue'>Close Receipt</span>
+        </div>
+        <div style="padding:2px">
+            @Html.Raw(Model.Insert)
+        </div>
+    </div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+    <div id="SaveReceipt" style="display:none">@Model.Json</div>
+
+    <script type="text/javascript" src="~/ConsentReceipt.js" ></script>
+</body>
+</html>

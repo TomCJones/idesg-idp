@@ -2,15 +2,7 @@
 <xsl:stylesheet version='1.0' xmlns:xsl='http://www.w3.org/1999/XSL/Transform'>
   <xsl:output method='html' indent='yes' doctype-public='//W3C//DTD HTML 3.2  FINAL//EN' />
   <xsl:template match='/'>
-    <HTML>
-      <HEAD>
-        <TITLE>Consent Receipt min</TITLE>
-        <script type='text/javascript' src='https://localhost:44371/ConsentReceipt.js' />
-      </HEAD>
-      <BODY>
-        <button onclick='function crPrint()' style='margin:6px 10px 6px 20px; padding:3px; background-color:lightblue'>Print Receipt</button>
-        <button onclick='function crSave()' style='margin:6px; padding:3px; background-color:lightblue'>Save Receipt</button>
-        <button onclick='function crBack()' style='margin:6px; padding:3px; background-color:lightblue'>Close Receipt</button>
+      <div>
         <table border='1'>
           <tr>
             <td colspan='2' style='border:0'>
@@ -134,12 +126,9 @@
           Version:
           <xsl:value-of select='ConsentReceipt/version' />
         </div>
+>
+      </div>
 
-        <div id='SaveString' style='display:none'>
-          <xsl:value-of select='ConsentReceipt/json' />
-        </div>
-      </BODY>
-    </HTML>
   </xsl:template>
 
   <xsl:template match='piiControllers'>

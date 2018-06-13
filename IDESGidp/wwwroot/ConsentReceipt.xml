@@ -1,44 +1,43 @@
 ﻿<?xml version="1.0"?>
-<?xml-stylesheet type ="text/xsl" href="https://localhost:44371/consentreceipt-min.xsl" ?>
 <ConsentReceipt>
-<version>KI-CR-v1.1.0</version>
-<jurisdiction>WA</jurisdiction>
-<consentTimestamp>2018-06-10T21:16:06.6343243Z</consentTimestamp>
-<collectionMethod>user input</collectionMethod>
-<consentReceiptID>a61f7378-af2f-46d1-93e2-941151a7fdb2</consentReceiptID>
-<language>en</language>
-<piiPrincipalId>tomcjones</piiPrincipalId>
-<piiControllers json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
-  <piiController>IDESGidp</piiController>
-  <contact>jerry</contact>
-  <address>too restrictive for small sites</address>
-  <email>jerry@ca0.net</email>
-  <phone>too restrictive for small sites</phone>
-</piiControllers>
-<policyUrl>http://idesg-idp.azurewebsites.net/Home/About</policyUrl>
-<services json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
-  <service>IdP</service>
-  <purposes>
-    <purpose>Authenticate User</purpose>
-    <purposeCategory json:Array="true">1 - Core Function</purposeCategory>
-    <consentType>EXPLICIT</consentType>
-    <piiCategory json:Array="true">2 - Contact</piiCategory>
-    <primaryPurpose>true</primaryPurpose>
-    <termination>http://idesg-idp.azurewebsites.net/Home/About</termination>
-    <thirdPartyDisclosure>false</thirdPartyDisclosure>
-  </purposes>
-  <purposes>
-    <purpose>Federated Logon</purpose>
-    <purposeCategory json:Array="true">2 - not clear to me</purposeCategory>
-    <consentType>IMPLICIT</consentType>
-    <piiCategory>2 - Contact</piiCategory>
-    <piiCategory>3 - More stuff</piiCategory>
-    <primaryPurpose>false</primaryPurpose>
-    <termination>http://idesg-idp.azurewebsites.net/Home/About</termination>
-    <thirdPartyDisclosure>true</thirdPartyDisclosure>
-    <thirdPartyName>this will be any sites you sign on with this identifier</thirdPartyName>
-  </purposes>
-</services>
-<sensitive>falsesetto</sensitive>
-<json>{"version":"KI-CR-v1.1.0","jurisdiction":"WA","consentTimestamp":"2018-06-10T21:16:06.6343243Z","collectionMethod":"user input","consentReceiptID":"a61f7378-af2f-46d1-93e2-941151a7fdb2","language":"en","piiPrincipalId":"tomcjones","piiControllers":[{"piiController":"IDESGidp","contact":"jerry","address":"too restrictive for small sites","email":"jerry@ca0.net","phone":"too restrictive for small sites"}],"policyUrl":"http://idesg-idp.azurewebsites.net/Home/About","services":[{"service":"IdP","purposes":[{"purpose":"Authenticate User","purposeCategory":["1 - Core Function"],"consentType":"EXPLICIT","piiCategory":["2 - Contact"],"primaryPurpose":true,"termination":"http://idesg-idp.azurewebsites.net/Home/About","thirdPartyDisclosure":false},{"purpose":"Federated Logon","purposeCategory":["2 - not clear to me"],"consentType":"IMPLICIT","piiCategory":["2 - Contact","3 - More stuff"],"primaryPurpose":false,"termination":"http://idesg-idp.azurewebsites.net/Home/About","thirdPartyDisclosure":true,"thirdPartyName":"this will be any sites you sign on with this identifier"}]}],"sensitive":"false"}</json>
+  <version>KI-CR-v1.1.0</version>
+  <jurisdiction>WA</jurisdiction>
+  <consentTimestamp>2018-06-11T19:05:15.8529877Z</consentTimestamp>
+  <collectionMethod>user input</collectionMethod>
+  <consentReceiptID>8f28a1c3-a932-4aab-8721-8d1bf62c5b1b</consentReceiptID>
+  <language>en</language>
+  <piiPrincipalId>tomcjones</piiPrincipalId>
+  <piiControllers json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+    <piiController>IDESGidp</piiController>
+    <contact>jerry</contact>
+    <address>too restrictive for small sites</address>
+    <email>jerry@ca0.net</email>
+    <phone>too restrictive for small sites</phone>
+  </piiControllers>
+  <policyUrl>http://idesg-idp.azurewebsites.net/Home/About</policyUrl>
+  <services json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+    <service>IdP</service>
+    <purposes>
+      <purpose>Authenticate User</purpose>
+      <purposeCategory json:Array="true">1 - Core Function</purposeCategory>
+      <consentType>EXPLICIT</consentType>
+      <piiCategory json:Array="true">2 - Contact</piiCategory>
+      <primaryPurpose>true</primaryPurpose>
+      <termination>http://idesg-idp.azurewebsites.net/Home/About</termination>
+      <thirdPartyDisclosure>false</thirdPartyDisclosure>
+    </purposes>
+    <purposes>
+      <purpose>Federated Logon</purpose>
+      <purposeCategory json:Array="true">2 - not clear to me</purposeCategory>
+      <consentType>IMPLICIT</consentType>
+      <piiCategory>2 - Contact</piiCategory>
+      <piiCategory>3 - More stuff</piiCategory>
+      <primaryPurpose>false</primaryPurpose>
+      <termination>http://idesg-idp.azurewebsites.net/Home/About</termination>
+      <thirdPartyDisclosure>true</thirdPartyDisclosure>
+      <thirdPartyName>this will be any sites you sign on with this identifier</thirdPartyName>
+    </purposes>
+  </services>
+  <sensitive>false</sensitive>
+  <json>{"version":"KI-CR-v1.1.0","jurisdiction":"WA","consentTimestamp":"2018-06-11T19:05:15.8529877Z","collectionMethod":"user input","consentReceiptID":"8f28a1c3-a932-4aab-8721-8d1bf62c5b1b","language":"en","piiPrincipalId":"tomcjones","piiControllers":[{"piiController":"IDESGidp","contact":"jerry","address":"too restrictive for small sites","email":"jerry@ca0.net","phone":"too restrictive for small sites"}],"policyUrl":"http://idesg-idp.azurewebsites.net/Home/About","services":[{"service":"IdP","purposes":[{"purpose":"Authenticate User","purposeCategory":["1 - Core Function"],"consentType":"EXPLICIT","piiCategory":["2 - Contact"],"primaryPurpose":true,"termination":"http://idesg-idp.azurewebsites.net/Home/About","thirdPartyDisclosure":false},{"purpose":"Federated Logon","purposeCategory":["2 - not clear to me"],"consentType":"IMPLICIT","piiCategory":["2 - Contact","3 - More stuff"],"primaryPurpose":false,"termination":"http://idesg-idp.azurewebsites.net/Home/About","thirdPartyDisclosure":true,"thirdPartyName":"this will be any sites you sign on with this identifier"}]}],"sensitive":"false"}</json>
 </ConsentReceipt>
