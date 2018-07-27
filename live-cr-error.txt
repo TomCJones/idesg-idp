@@ -1,0 +1,391 @@
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Private.CoreLib.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\home\site\wwwroot\IDESGidp.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Runtime.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.hosting.abstractions\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\netstandard.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.hosting\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.configuration.abstractions\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.dependencyinjection.abstractions\2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.fileproviders.abstractions\2.0.1\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Collections.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.configuration\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.configuration.environmentvariables\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.primitives\2.0.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Threading.Tasks.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Runtime.Extensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Linq.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.server.kestrel\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Server.Kestrel.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.server.kestrel.transport.libuv\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.IO.FileSystem.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.logging\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Logging.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.server.iisintegration\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Server.IISIntegration.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.dependencyinjection\2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Diagnostics.DiagnosticSource.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.http.abstractions\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.http\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Http.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.http.features\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.ComponentModel.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.objectpool\2.0.0\lib\netstandard2.0\Microsoft.Extensions.ObjectPool.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.configuration.usersecrets\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.azureappservices.hostingstartup\2.0.2\lib\netcoreapp2.0\Microsoft.AspNetCore.AzureAppServices.HostingStartup.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Resources.ResourceManager.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.azureappservicesintegration\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.AzureAppServicesIntegration.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.fileproviders.physical\2.0.1\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Physical.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.IO.FileSystem.Watcher.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.ComponentModel.Primitives.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Collections.Concurrent.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.filesystemglobbing\2.0.1\lib\netstandard2.0\Microsoft.Extensions.FileSystemGlobbing.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.configuration.fileextensions\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.FileExtensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.configuration.json\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Json.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Runtime.InteropServices.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.configuration.commandline\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.CommandLine.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Threading.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Diagnostics.Tracing.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Threading.Overlapped.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\home\site\wwwroot\Newtonsoft.Json.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Linq.Expressions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.ComponentModel.TypeConverter.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.ObjectModel.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Runtime.Numerics.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Private.Uri.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.options\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Options.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.logging.abstractions\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.server.kestrel.transport.abstractions\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.server.kestrel.core\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Server.Kestrel.Core.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.hosting.server.abstractions\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.logging.configuration\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Configuration.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.options.configurationextensions\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.logging.console\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Console.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.logging.debug\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Debug.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.httpoverrides\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.HttpOverrides.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.authentication.core\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Core.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.authentication.abstractions\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Security.Claims.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.logging.azureappservices\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Logging.AzureAppServices.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Runtime.InteropServices.RuntimeInformation.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Console.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.entityframeworkcore\2.0.2\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.identity.entityframeworkcore\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.identity.stores\2.0.2\lib\netstandard2.0\Microsoft.Extensions.Identity.Stores.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.identity\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Identity.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.identity.core\2.0.2\lib\netstandard2.0\Microsoft.Extensions.Identity.Core.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Reflection.Emit.ILGeneration.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.mvc\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.mvc.core\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.mvc.formatters.xml\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Reflection.Primitives.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Reflection.Emit.Lightweight.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'Anonymously Hosted DynamicMethods Assembly'. 
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\home\site\wwwroot\IdentityServer4.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\home\site\wwwroot\IdentityServer4.AspNetIdentity.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.authentication\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.authentication.google\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Google.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.authentication.oauth\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.OAuth.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.caching.memory\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.caching.abstractions\2.0.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.dataprotection\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.DataProtection.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.dataprotection.abstractions\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.cryptography.internal\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Cryptography.Internal.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.webencoders\2.0.1\lib\netstandard2.0\Microsoft.Extensions.WebEncoders.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\system.text.encodings.web\4.4.0\lib\netstandard2.0\System.Text.Encodings.Web.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.authentication.cookies\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Cookies.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.dependencymodel\2.0.3\lib\netstandard1.6\Microsoft.Extensions.DependencyModel.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Reflection.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.AppContext.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.IO.FileSystem.Primitives.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.IO.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.spaservices\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.SpaServices.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.routing\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Routing.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.mvc.abstractions\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Buffers.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.routing.abstractions\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Routing.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.mvc.apiexplorer\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.ApiExplorer.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.authorization\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Authorization.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.authorization.policy\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Authorization.Policy.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.mvc.taghelpers\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.TagHelpers.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.razor.runtime\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Razor.Runtime.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.mvc.razor\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Razor.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.mvc.viewfeatures\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.ViewFeatures.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.mvc.dataannotations\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.DataAnnotations.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.mvc.formatters.json\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Formatters.Json.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.antiforgery\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Antiforgery.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.codeanalysis.common\2.3.1\lib\netstandard1.3\Microsoft.CodeAnalysis.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.razor.language\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Razor.Language.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.mvc.razor.extensions\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.codeanalysis.razor\2.0.2\lib\netstandard2.0\Microsoft.CodeAnalysis.Razor.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.mvc.razorpages\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.RazorPages.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.mvc.cors\2.0.3\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Cors.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.cors\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Cors.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Net.Http.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Security.Cryptography.Algorithms.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\home\site\wwwroot\Microsoft.IdentityModel.Tokens.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Security.Cryptography.Primitives.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Runtime.Serialization.Formatters.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Diagnostics.TraceSource.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Collections.Specialized.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Drawing.Primitives.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Runtime.Serialization.Primitives.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Data.Common.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Xml.ReaderWriter.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Private.Xml.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\home\site\wwwroot\Microsoft.IdentityModel.Logging.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\home\site\wwwroot\IdentityModel.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Net.Primitives.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.net.http.headers\2.0.2\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Threading.ThreadPool.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\Microsoft.Win32.Registry.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Xml.XDocument.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Private.Xml.Linq.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Diagnostics.Debug.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Text.Encoding.Extensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Text.RegularExpressions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.rewrite\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Rewrite.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.diagnostics\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Diagnostics.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.diagnostics.entityframeworkcore\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.staticfiles\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.StaticFiles.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.visualstudio.web.browserlink\2.0.2\lib\netstandard2.0\Microsoft.VisualStudio.Web.BrowserLink.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.IO.MemoryMappedFiles.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.localization.abstractions\2.0.2\lib\netstandard2.0\Microsoft.Extensions.Localization.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.jsonpatch\2.0.0\lib\netstandard2.0\Microsoft.AspNetCore.JsonPatch.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Runtime.Serialization.Xml.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Private.DataContractSerialization.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Collections.Immutable.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.extensions.hosting.abstractions\2.0.2\lib\netstandard2.0\Microsoft.Extensions.Hosting.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Threading.Timer.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Threading.Thread.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Numerics.Vectors.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\system.runtime.compilerservices.unsafe\4.4.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Security.Cryptography.X509Certificates.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.http.extensions\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Http.Extensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.entityframeworkcore.relational\2.0.2\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Security.Principal.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.webutilities\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.WebUtilities.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.entityframeworkcore.sqlserver\2.0.2\lib\netstandard2.0\Microsoft.EntityFrameworkCore.SqlServer.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\remotion.linq\2.1.1\lib\netstandard1.0\Remotion.Linq.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\system.interactive.async\3.1.1\lib\netstandard1.3\System.Interactive.Async.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.ComponentModel.Annotations.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Linq.Queryable.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Reflection.Extensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Transactions.Local.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\system.data.sqlclient\4.4.3\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\system.text.encoding.codepages\4.4.0\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.razor\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Razor.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.html.abstractions\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Html.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.codeanalysis.csharp\2.3.1\lib\netstandard1.3\Microsoft.CodeAnalysis.CSharp.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.diagnostics.abstractions\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Diagnostics.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\home\site\wwwroot\IDESGidp.PrecompiledViews.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/  
+Microsoft.EntityFrameworkCore.Infrastructure:Information: Entity Framework Core 2.0.2-rtm-10011 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+The thread 0x3b1c has exited with code 0 (0x0).
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (44ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[CreatedOn], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TokenTypes], [e].[TwoFactorEnabled], [e].[UpdatedOn], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application signed out.
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.External signed out.
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.TwoFactorUserId signed out.
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: Identity.Application was not authenticated. Failure message: No principal.
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: Identity.Application was not authenticated. Failure message: No principal.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executing action method IDESGidp.Controllers.HomeController.Index (IDESGidp) with arguments ((null)) - ModelState is Valid
+Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor:Information: Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executed action IDESGidp.Controllers.HomeController.Index (IDESGidp) in 6.7238ms
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 702.6093ms 200 text/html; charset=utf-8
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/Account/Login  
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executing action method IDESGidp.Controllers.AccountController.Login (IDESGidp) with arguments () - ModelState is Valid
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.External signed out.
+Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor:Information: Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executed action IDESGidp.Controllers.AccountController.Login (IDESGidp) in 319.2293ms
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 402.2804ms 200 text/html; charset=utf-8
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/lib/jquery-validation/dist/jquery.validate.js  
+Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware:Information: Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'D:\home\site\wwwroot\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 62.9975ms 200 application/javascript
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js  
+Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware:Information: Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: 'D:\home\site\wwwroot\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js'
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 42.8405ms 200 application/javascript
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 POST http://idesg-idp.azurewebsites.net/Account/ExternalLogin application/x-www-form-urlencoded 198
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executing action method IDESGidp.Controllers.AccountController.ExternalLogin (IDESGidp) with arguments (Google, ) - ModelState is Valid
+Microsoft.AspNetCore.Mvc.ChallengeResult:Information: Executing ChallengeResult with authentication schemes (Google).
+Microsoft.AspNetCore.Authentication.Google.GoogleHandler:Information: AuthenticationScheme: Google was challenged.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executed action IDESGidp.Controllers.AccountController.ExternalLogin (IDESGidp) in 88.5807ms
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 106.9815ms 302 
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/signin-google?state=CfDJ8GRzeSKAfKFJigNIN2uw9lA9SK8tomADTmLrzK40SlOSN_mXJHsYA4J7ohb971oVogU9rgsu0cedHhZGUDwmzkjqsNSnSCtGbZnJrim7BpInrVX0najhOp9qulgJlFLzq17Y465fbM8RvJ3aXXy4Cv9hTGYWMOrKJrD5i4cNmcgOHte_hH86ru8Cp5enXVDSR_WSql_T7PYD4xbqKgq_LhVeJa1090hBiKrfrFMZbAvPMeNjhCnP9045pMLNCtY943wXbe_QWu2gro7D81sobl8&code=4/AABj4BJUwkitaGiRnKLXBMM2AYcaZYa-25bUEIr21-kfqJ73RkXDhss6vGjrf50cYcsRD_yVI1pcaAESP5oXG8Q&authuser=0&session_state=e1f26fff1b90d20666d196546c7b5b810e729a94..a405&prompt=none  
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Collections.NonGeneric.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.IO.Compression.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.External signed in.
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 689.4016ms 302 
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/Account/ExternalLoginCallback  
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executing action method IDESGidp.Controllers.AccountController.ExternalLoginCallback (IDESGidp) with arguments (, ) - ModelState is Valid
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.External was successfully authenticated.
+Microsoft.EntityFrameworkCore.Infrastructure:Information: Entity Framework Core 2.0.2-rtm-10011 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (45ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [userLogin].[LoginProvider], [userLogin].[ProviderKey], [userLogin].[ProviderDisplayName], [userLogin].[UserId]
+FROM [AspNetUserLogins] AS [userLogin]
+WHERE ([userLogin].[LoginProvider] = @__loginProvider_0) AND ([userLogin].[ProviderKey] = @__providerKey_1)
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (43ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CreatedOn], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TokenTypes], [u].[TwoFactorEnabled], [u].[UpdatedOn], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Id] = @__userId_0
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.External signed out.
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (43ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (43ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+IdentityServer4.Hosting.IdentityServerAuthenticationService:Debug: Augmenting SignInContext
+IdentityServer4.Hosting.IdentityServerAuthenticationService:Debug: Removing amr claim with value: Google
+IdentityServer4.Hosting.IdentityServerAuthenticationService:Debug: Adding idp claim with value: Google
+IdentityServer4.Hosting.IdentityServerAuthenticationService:Debug: Adding amr claim with value: external
+IdentityServer4.Hosting.IdentityServerAuthenticationService:Debug: Adding auth_time claim with value: 1531977948
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application signed in.
+IDESGidp.Controllers.AccountController:Information: User signed in with Google provider.
+Microsoft.AspNetCore.Mvc.RedirectToActionResult:Information: Executing RedirectResult, redirecting to /.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executed action IDESGidp.Controllers.AccountController.ExternalLoginCallback (IDESGidp) in 495.6943ms
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 513.0152ms 302 
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/  
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application was successfully authenticated.
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application was successfully authenticated.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executing action method IDESGidp.Controllers.HomeController.Index (IDESGidp) with arguments ((null)) - ModelState is Valid
+Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor:Information: Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executed action IDESGidp.Controllers.HomeController.Index (IDESGidp) in 18.6804ms
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 32.5959ms 200 text/html; charset=utf-8
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/Manage/Index  
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application was successfully authenticated.
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application was successfully authenticated.
+Microsoft.AspNetCore.Authorization.DefaultAuthorizationService:Information: Authorization was successful for user: tomcj.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executing action method IDESGidp.Controllers.ManageController.Index (IDESGidp) with arguments ((null)) - ModelState is Valid
+Microsoft.EntityFrameworkCore.Infrastructure:Information: Entity Framework Core 2.0.2-rtm-10011 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (44ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[CreatedOn], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TokenTypes], [e].[TwoFactorEnabled], [e].[UpdatedOn], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor:Information: Executing ViewResult, running view at path /Views/Manage/Index.cshtml.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executed action IDESGidp.Controllers.ManageController.Index (IDESGidp) in 302.0879ms
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 328.7792ms 200 text/html; charset=utf-8
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/favicon.ico  
+Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware:Information: Sending file. Request path: '/favicon.ico'. Physical path: 'D:\home\site\wwwroot\wwwroot\favicon.ico'
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 139.8136ms 200 image/x-icon
+The thread 0x2b1c has exited with code 0 (0x0).
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 POST http://idesg-idp.azurewebsites.net/Manage/Index application/x-www-form-urlencoded 320
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application was successfully authenticated.
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application was successfully authenticated.
+Microsoft.AspNetCore.Authorization.DefaultAuthorizationService:Information: Authorization was successful for user: tomcj.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executing action method IDESGidp.Controllers.ManageController.Index (IDESGidp) with arguments (IDESGidp.Models.ManageViewModels.IndexViewModel) - ModelState is Valid
+Microsoft.EntityFrameworkCore.Infrastructure:Information: Entity Framework Core 2.0.2-rtm-10011 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (44ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[CreatedOn], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TokenTypes], [e].[TwoFactorEnabled], [e].[UpdatedOn], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (44ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CreatedOn], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TokenTypes], [u].[TwoFactorEnabled], [u].[UpdatedOn], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (44ms) [Parameters=[@p17='?' (Size = 450), @p0='?', @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?', @p3='?' (Size = 256), @p4='?', @p5='?', @p6='?', @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?', @p15='?', @p16='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [CreatedOn] = @p2, [Email] = @p3, [EmailConfirmed] = @p4, [LockoutEnabled] = @p5, [LockoutEnd] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [SecurityStamp] = @p12, [TokenTypes] = @p13, [TwoFactorEnabled] = @p14, [UpdatedOn] = @p15, [UserName] = @p16
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+SELECT @@ROWCOUNT;
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Reflection.Emit.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'System.Xml.Xsl.CompiledQuery.1'. 
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executed action IDESGidp.Controllers.ManageController.Index (IDESGidp) in 1027.4068ms
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Diagnostics.StackTrace.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Reflection.Metadata.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware:Error: An unhandled exception has occurred while executing the request
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at IDESGidp.Controllers.ManageController.GenerateConsentReceipt(ApplicationUser user) in C:\Users\rp_to_000\Documents\TopCat\Repos\IDESGidp\IDESGidp\Controllers\ManageController.cs:line 781
+   at IDESGidp.Controllers.ManageController.<Index>d__14.MoveNext() in C:\Users\rp_to_000\Documents\TopCat\Repos\IDESGidp\IDESGidp\Controllers\ManageController.cs:line 120
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\newtonsoft.json.bson\1.0.1\lib\netstandard1.3\Newtonsoft.Json.Bson.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Text.Encoding.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 1745.8588ms 500 text/html; charset=utf-8
+The thread 0x2d8c has exited with code 0 (0x0).
+The thread 0x18f0 has exited with code 0 (0x0).
+The thread 0x35c8 has exited with code 0 (0x0).
+The thread 0x2d90 has exited with code 0 (0x0).

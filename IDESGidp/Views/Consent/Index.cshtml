@@ -1,0 +1,89 @@
+﻿@model ConsentViewModel
+
+<div class="page-consent">
+    <div class="row page-header">
+        <div class="col-sm-10">
+            @if (Model.ClientLogoUrl != null)
+            {
+                <div class="client-logo"><img src="@Model.ClientLogoUrl"></div>
+            }
+            <h2>
+                @Model.ClientName
+                <small>is requesting your consent</small>
+            </h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-8">
+            @Html.Partial("_ValidationSummary")
+
+            <form asp-action="Index" class="consent-form">
+                <input type="hidden" asp-for="ReturnUrl" />
+
+                <div>Uncheck the information you do not wish to share.</div>
+
+                @if (Model.IdentityScopes.Any())
+                {
+                    <table>
+                        <tr style="text-decoration:underline; text-align:center; font-weight:bold">  <!-- class="panel panel-default consent-buttons"-->
+                                <td class="panel-heading">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    Personal Information
+                                </td>
+                                <td>
+                                    Privacy Notification
+                                </td>
+                        </tr>
+                        @foreach (var scope in Model.IdentityScopes)
+                        {
+                            @Html.Partial("_ScopeListItem", scope)
+                        }
+                    </table>
+                }
+
+                @if (Model.ResourceScopes.Any())
+                {
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-tasks"></span>
+                            Application Access
+                        </div>
+                        <ul class="list-group">
+                            @foreach (var scope in Model.ResourceScopes)
+                            {
+                                @Html.Partial("_ScopeListItem", scope)
+                            }
+                        </ul>
+                    </div>
+                }
+
+                <div class="consent-remember" style="padding-left:10px">
+                    @if (Model.AllowRememberConsent)
+                    {
+                        <label>
+                            <input class="consent-scopecheck" asp-for="RememberConsent" />
+                            <strong>Remember My Consent</strong>
+                        </label>
+                    }
+                    <label style="padding-right:15px">
+                        <input class="consent-scopecheck" asp-for="GetReceipt" />
+                        <strong>Get Receipt</strong>
+                    </label>
+                </div>
+
+                <div class="consent-buttons">
+                    <button name="button" value="yes" class="btn btn-primary" autofocus>Yes, Consent</button>
+                    <button name="button" value="no" class="btn">No, Cancel</button>
+                    @if (Model.ClientUrl != null)
+                    {
+                        <a class="pull-right btn btn-default" target="_blank" href="@Model.ClientUrl">
+                            <span class="glyphicon glyphicon-info-sign"></span>
+                            <strong>@Model.ClientName</strong>
+                        </a>
+                    }
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

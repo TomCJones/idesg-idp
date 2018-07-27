@@ -17,12 +17,12 @@
 	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
 		<title>Page-1</title>
 		<v:pageProperties v:drawingScale="1" v:pageScale="1" v:drawingUnits="19" v:shadowOffsetX="9" v:shadowOffsetY="-9"/>
-		<g id="shape26-1" v:mID="26" v:groupContext="shape" transform="translate(0.375,-0.375)">
-			<title>Sheet.26</title>
-			<desc>Tradeoffs between Security and Privacy</desc>
+		<g id="shape27-1" v:mID="27" v:groupContext="shape" transform="translate(0.375,-0.375)">
+			<title>Sheet.27</title>
+			<desc>Multi-factor Authentication</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="305.795" cy="50.25" width="611.6" height="99"/>
 			<rect x="0" y="0.75" width="612" height="162" class="st1"/>
-			<text x="96.94" y="58.05" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Tradeoffs between Security and Privacy</text>		</g>
+			<text x="160.26" y="58.05" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Multi-factor Authentication</text>		</g>
 	</g>
 </svg>

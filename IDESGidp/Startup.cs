@@ -3,6 +3,8 @@
 using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -11,6 +13,8 @@ using IDESGidp.Data;
 using IDESGidp.Models;
 using IDESGidp.Services;
 using IdentityServer4;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Rewrite;
 
 namespace IDESGidp
 {
@@ -50,6 +54,9 @@ namespace IDESGidp
 
             services.AddMvc()
                 .AddXmlDataContractSerializerFormatters();        // nneded to sent or receive XML
+
+            services.AddMvc();
+            services.Configure<MvcOptions>(options => { options.Filters.Add(new RequireHttpsAttribute()); });
 
             // configure identity server with in-memory stores, keys, clients and scopes
             services.AddIdentityServer()
@@ -93,8 +100,14 @@ namespace IDESGidp
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseDeveloperExceptionPage();   // TODO  DANGEROUS must be removed soon!
+                app.UseDatabaseErrorPage();
+                //app.UseExceptionHandler("/Home/Error");
             }
+
+            var options = new RewriteOptions()
+                .AddRedirectToHttps();
+            app.UseRewriter(options);
 
             app.UseStaticFiles();
 

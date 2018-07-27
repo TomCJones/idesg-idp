@@ -117,101 +117,58 @@ namespace IDESGidp.Controllers
 
             if (model.SendReceipt == true)
             {
-                try
+                List<string> sCr = GenerateConsentReceipt(user);
+                if (sCr.Count == 3)
                 {
-                    ProfileResponse profileResp = new ProfileResponse
-                    {
-                        version = "KI-CR-v1.1.0",
-                        jurisdiction = "WA",
-                        consentTimestamp = DateTime.UtcNow.ToString("o"),
-                        collectionMethod = "user input",
-                        consentReceiptID = Guid.NewGuid().ToString(),
-                        language = "en",
-                        piiPrincipalId = user.UserName,
-                        piiControllers = new jsonController[]
-                    {
-                    new jsonController { piiController = "IDESGidp",
-                    contact = "jerry",
-                        email="jerry@ca0.net",
-                        address="too restrictive for small sites",
-                        phone="too restrictive for small sites"}
-                    },
-                        policyUrl = "https://idesg-idp.azurewebsites.net/Home/About",
-                        services = new jsonService[]
-                    {
-                    new jsonService {
-                        service = "Identifier Provider",
-                        purposes = new jsonPurpose[]
-                        {
-                            new jsonPurpose
-                            {
-                                purpose = "Authenticate User",
-                                purposeCategory= new string[] {"1 - Core Function" },
-                                consentType="EXPLICIT",
-                                piiCategory = new string[] {"2 - Contact" },
-                                primaryPurpose= true,
-                                termination="https://idesg-idp.azurewebsites.net/Home/About",
-                                thirdPartyDisclosure = false
-                            },
-                            new jsonPurpose
-                            {
-                                purpose="Federated Logon",
-                                purposeCategory= new string[] {"2 - not clear to me" },
-                                consentType="IMPLICIT",
-                                piiCategory=new string[] {"2 - Contact", "3 - More stuff"},
-                                primaryPurpose=false,
-                                termination="https://idesg-idp.azurewebsites.net/Home/About",
-                                thirdPartyDisclosure = true,
-                                thirdPartyName="this will be any sites you sign onto with this identifier"
-                            }
-                        }
-                    }
-                    },
-                        sensitive = "false"
-                    };
-
-                    string jsonOut = JsonConvert.SerializeObject(profileResp);
-                    XmlDocument xOut = JsonConvert.DeserializeXmlNode(jsonOut, "ConsentReceipt", true);
-
-                    XmlWriterSettings settings = new XmlWriterSettings
-                    {
-                        Indent = true,
-                        ConformanceLevel = ConformanceLevel.Auto                        // allows xml fragments
-                    };
-                    StringBuilder xml = new StringBuilder();
-                    XmlWriter writer = XmlWriter.Create(xml, settings);
-
-                    XslCompiledTransform transform = new XslCompiledTransform();
-                    XsltSettings xslSettings = new XsltSettings
-                    {
-                        EnableScript = true
-                    };
-                    transform.Load("wwwroot\\ConsentReceipt-min.xsl", xslSettings, null);  //  TODO make xsl a variable for other transforms
-                    transform.Transform(xOut, writer);
-                    writer.Flush();
-                    string sOut = xml.ToString();
-
                     ConsentReceiptViewModel crModel = new ConsentReceiptViewModel
                     {
-                        Insert = sOut,
-                        Json = jsonOut,
-                        CrGuid = "ConsentReceipt" + profileResp.consentReceiptID + ".json"
-                };
+                        Insert = sCr[0],
+                        Json = sCr[1],
+                        CrGuid = sCr[2]
+                    };
                     return View(nameof(ConsentReceipt), crModel);
-
-                }
-                catch (Exception ex)
-                {
-                    StatusMessage = "Faild to create JSON or XML object for created [JSONOBJECT] -- " + ex.Message;
-                }
+                };
+                StatusMessage = sCr[0];
             }
+
             return RedirectToAction(nameof(Index));
         }
 
         [HttpGet]
-        public async Task<IActionResult> ConsentReceipt(ConsentReceiptViewModel model)
+        public IActionResult ConsentReceipt(ConsentReceiptViewModel model)
         {
             return View(model);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ExternalReceipt(ConsentViewModel model)
+        {
+           /* if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            */
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                throw new ApplicationException($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+            }
+
+                List<string> sCr = GenerateConsentReceipt(user);
+                if (sCr.Count == 3)
+                {
+                    ConsentReceiptViewModel crModel = new ConsentReceiptViewModel
+                    {
+                        Insert = sCr[0],
+                        Json = sCr[1],
+                        CrGuid = sCr[2]
+                    };
+                    return View(nameof(ConsentReceipt), crModel);
+                };
+                StatusMessage = sCr[0];
+
+            return View(model);
+
         }
 
         [HttpPost]
@@ -768,6 +725,96 @@ namespace IDESGidp.Controllers
 
             model.SharedKey = FormatKey(unformattedKey);
             model.AuthenticatorUri = GenerateQrCodeUri(user.Email, unformattedKey);
+        }
+
+        public List<string> GenerateConsentReceipt(ApplicationUser user)
+        {
+            List<string> status = new List<string>();
+
+            try
+            {
+                ProfileResponse profileResp = new ProfileResponse
+                {
+                    version = "KI-CR-v1.1.0",
+                    jurisdiction = "WA",
+                    consentTimestamp = DateTime.UtcNow.ToString("o"),
+                    collectionMethod = "user input",
+                    consentReceiptID = Guid.NewGuid().ToString(),
+                    language = "en",
+                    piiPrincipalId = user.UserName,
+                    piiControllers = new jsonController[]
+                {
+                    new jsonController { piiController = "IDESGidp",
+                    contact = "jerry",
+                        email="jerry@ca0.net",
+                        address="too restrictive for small sites",
+                        phone="too restrictive for small sites"}
+                },
+                    policyUrl = "https://idesg-idp.azurewebsites.net/Home/About",
+                    services = new jsonService[]
+                {
+                    new jsonService {
+                        service = "Identifier Provider",
+                        purposes = new jsonPurpose[]
+                        {
+                            new jsonPurpose
+                            {
+                                purpose = "Authenticate User",
+                                purposeCategory= new string[] {"1 - Core Function" },
+                                consentType="EXPLICIT",
+                                piiCategory = new string[] {"2 - Contact" },
+                                primaryPurpose= true,
+                                termination="https://idesg-idp.azurewebsites.net/Home/About",
+                                thirdPartyDisclosure = false
+                            },
+                            new jsonPurpose
+                            {
+                                purpose="Federated Logon",
+                                purposeCategory= new string[] {"2 - not clear to me" },
+                                consentType="IMPLICIT",
+                                piiCategory=new string[] {"2 - Contact", "3 - More stuff"},
+                                primaryPurpose=false,
+                                termination="https://idesg-idp.azurewebsites.net/Home/About",
+                                thirdPartyDisclosure = true,
+                                thirdPartyName="this will be any sites you sign onto with this identifier"
+                            }
+                        }
+                    }
+                },
+                    sensitive = "false"
+                };
+
+                string jsonOut = JsonConvert.SerializeObject(profileResp);
+                XmlDocument xOut = JsonConvert.DeserializeXmlNode(jsonOut, "ConsentReceipt", true);
+
+                XmlWriterSettings settings = new XmlWriterSettings
+                {
+                    Indent = true,
+                    ConformanceLevel = ConformanceLevel.Auto                        // allows xml fragments
+                };
+                StringBuilder xml = new StringBuilder();
+                XmlWriter writer = XmlWriter.Create(xml, settings);
+
+                XslCompiledTransform transform = new XslCompiledTransform();
+                XsltSettings xslSettings = new XsltSettings
+                {
+                    EnableScript = true
+                };
+                transform.Load("wwwroot\\ConsentReceipt-min.xsl", xslSettings, null);  //  TODO make xsl a variable for other transforms
+                transform.Transform(xOut, writer);
+                writer.Flush();
+                string sOut = xml.ToString();
+
+                status.Add(sOut);
+                status.Add(jsonOut);
+                status.Add("ConsentReceipt" + profileResp.consentReceiptID + ".json");
+            }
+            catch (Exception ex)
+            {
+                status.Add("Faild to create JSON or XML object for created [JSONOBJECT] -- " + ex.Message);
+            }
+
+            return status;
         }
 
         #endregion

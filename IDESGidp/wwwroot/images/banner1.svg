@@ -17,12 +17,12 @@
 	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
 		<title>Page-1</title>
 		<v:pageProperties v:drawingScale="1" v:pageScale="1" v:drawingUnits="19" v:shadowOffsetX="9" v:shadowOffsetY="-9"/>
-		<g id="shape4-1" v:mID="4" v:groupContext="shape" transform="translate(0.375,-0.375)">
-			<title>Sheet.4</title>
-			<desc>IDEF | Identity Ecosystem Framework</desc>
+		<g id="shape5-1" v:mID="5" v:groupContext="shape" transform="translate(0.375,-0.375)">
+			<title>Sheet.5</title>
+			<desc>IAP = Identifier or Attribute Provider</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="305.795" cy="50.25" width="611.6" height="99"/>
 			<rect x="0" y="0.75" width="612" height="162" class="st1"/>
-			<text x="107.34" y="58.05" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>IDEF | Identity Ecosystem Framework</text>		</g>
+			<text x="114.01" y="58.05" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>IAP = Identifier or Attribute Provider</text>		</g>
 	</g>
 </svg>

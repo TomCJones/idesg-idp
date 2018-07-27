@@ -1,0 +1,284 @@
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Security.Principal.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.razor\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Razor.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.html.abstractions\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Html.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.codeanalysis.csharp\2.3.1\lib\netstandard1.3\Microsoft.CodeAnalysis.CSharp.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.diagnostics.abstractions\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.Diagnostics.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\home\site\wwwroot\IDESGidp.PrecompiledViews.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): PDB file for 'D:\home\site\wwwroot\IDESGidp.PrecompiledViews.dll' loaded on the target computer.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.aspnetcore.webutilities\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.WebUtilities.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\microsoft.entityframeworkcore.sqlserver\2.0.2\lib\netstandard2.0\Microsoft.EntityFrameworkCore.SqlServer.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\remotion.linq\2.1.1\lib\netstandard1.0\Remotion.Linq.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\system.interactive.async\3.1.1\lib\netstandard1.3\System.Interactive.Async.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+The thread 0x30cc has exited with code 0 (0x0).
+The thread 0x2ac has exited with code 0 (0x0).
+The thread 0x3bb8 has exited with code 0 (0x0).
+The thread 0x1464 has exited with code 0 (0x0).
+The thread 0x35ac has exited with code 0 (0x0).
+The thread 0x1258 has exited with code 0 (0x0).
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/  
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executing action method IDESGidp.Controllers.HomeController.Index (IDESGidp) with arguments ((null)) - ModelState is Valid
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/  
+Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor:Information: Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executing action method IDESGidp.Controllers.HomeController.Index (IDESGidp) with arguments ((null)) - ModelState is Valid
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executed action IDESGidp.Controllers.HomeController.Index (IDESGidp) in 37.4974ms
+Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor:Information: Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executed action IDESGidp.Controllers.HomeController.Index (IDESGidp) in 36.082ms
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 68.8947ms 200 text/html; charset=utf-8
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 69.3246ms 200 text/html; charset=utf-8
+The thread 0x2e40 has exited with code 0 (0x0).
+The thread 0x398c has exited with code 0 (0x0).
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/.well-known/openid-configuration  
+IdentityServer4.Hosting.EndpointRouter:Debug: Request path /.well-known/openid-configuration matched to endpoint type Discovery
+IdentityServer4.Hosting.EndpointRouter:Debug: Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+IdentityServer4.Hosting.IdentityServerMiddleware:Information: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+IdentityServer4.Endpoints.DiscoveryEndpoint:Debug: Start discovery request
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 601.3134ms 200 application/json; charset=UTF-8
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/.well-known/openid-configuration/jwks  
+IdentityServer4.Hosting.EndpointRouter:Debug: Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+IdentityServer4.Hosting.EndpointRouter:Debug: Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+IdentityServer4.Hosting.IdentityServerMiddleware:Information: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+IdentityServer4.Endpoints.DiscoveryKeyEndpoint:Debug: Start key discovery request
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 111.8661ms 200 application/json; charset=UTF-8
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/connect/authorize?client_id=IDESG2rp&redirect_uri=https%3A%2F%2Flocalhost%3A44371%2Fsignin-oidc&response_type=id_token&scope=openid%20profile%20email&response_mode=form_post&nonce=636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi&state=CfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg&x-client-SKU=ID_NETSTANDARD1_4&x-client-ver=5.2.0.0  
+IdentityServer4.Hosting.EndpointRouter:Debug: Request path /connect/authorize matched to endpoint type Authorize
+IdentityServer4.Hosting.EndpointRouter:Debug: Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+IdentityServer4.Hosting.IdentityServerMiddleware:Information: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+IdentityServer4.Endpoints.AuthorizeEndpoint:Debug: Start authorize request
+IdentityServer4.Endpoints.AuthorizeEndpoint:Debug: No user present in authorize request
+IdentityServer4.Validation.AuthorizeRequestValidator:Debug: Start authorize request protocol validation
+IdentityServer4.Stores.ValidatingClientStore:Debug: client configuration validation for client IDESG2rp succeeded.
+IdentityServer4.Validation.AuthorizeRequestValidator:Debug: Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+IdentityServer4.Endpoints.AuthorizeEndpoint:Information: ValidatedAuthorizeRequest
+{
+  "ClientId": "IDESG2rp",
+  "ClientName": "IDESG Best Practice RP",
+  "RedirectUri": "https://localhost:44371/signin-oidc",
+  "AllowedRedirectUris": [
+    "https://localhost:44371/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "implicit",
+  "RequestedScopes": "openid profile email",
+  "State": "CfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg",
+  "Nonce": "636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi",
+  "Raw": {
+    "client_id": "IDESG2rp",
+    "redirect_uri": "https://localhost:44371/signin-oidc",
+    "response_type": "id_token",
+    "scope": "openid profile email",
+    "response_mode": "form_post",
+    "nonce": "636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi",
+    "state": "CfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+IdentityServer4.ResponseHandling.AuthorizeInteractionResponseGenerator:Information: Showing login: User is not authenticated
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 287.1692ms 302 
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/account/login?returnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DIDESG2rp%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A44371%252Fsignin-oidc%26response_type%3Did_token%26scope%3Dopenid%2520profile%2520email%26response_mode%3Dform_post%26nonce%3D636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi%26state%3DCfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg%26x-client-SKU%3DID_NETSTANDARD1_4%26x-client-ver%3D5.2.0.0  
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.ComponentModel.Annotations.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executing action method IDESGidp.Controllers.AccountController.Login (IDESGidp) with arguments (/connect/authorize/callback?client_id=IDESG2rp&redirect_uri=https%3A%2F%2Flocalhost%3A44371%2Fsignin-oidc&response_type=id_token&scope=openid%20profile%20email&response_mode=form_post&nonce=636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi&state=CfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg&x-client-SKU=ID_NETSTANDARD1_4&x-client-ver=5.2.0.0) - ModelState is Valid
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.External signed out.
+Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor:Information: Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executed action IDESGidp.Controllers.AccountController.Login (IDESGidp) in 686.1096ms
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 1719.7518ms 200 text/html; charset=utf-8
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/js/site.js?v=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU  
+Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware:Information: The file /js/site.js was not modified
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 23.9585ms 304 application/javascript
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 POST http://idesg-idp.azurewebsites.net/Account/ExternalLogin?returnurl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DIDESG2rp%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A44371%252Fsignin-oidc%26response_type%3Did_token%26scope%3Dopenid%2520profile%2520email%26response_mode%3Dform_post%26nonce%3D636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi%26state%3DCfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg%26x-client-SKU%3DID_NETSTANDARD1_4%26x-client-ver%3D5.2.0.0 application/x-www-form-urlencoded 198
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executing action method IDESGidp.Controllers.AccountController.ExternalLogin (IDESGidp) with arguments (Google, /connect/authorize/callback?client_id=IDESG2rp&redirect_uri=https%3A%2F%2Flocalhost%3A44371%2Fsignin-oidc&response_type=id_token&scope=openid%20profile%20email&response_mode=form_post&nonce=636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi&state=CfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg&x-client-SKU=ID_NETSTANDARD1_4&x-client-ver=5.2.0.0) - ModelState is Valid
+Microsoft.AspNetCore.Mvc.ChallengeResult:Information: Executing ChallengeResult with authentication schemes (Google).
+Microsoft.AspNetCore.Authentication.Google.GoogleHandler:Information: AuthenticationScheme: Google was challenged.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executed action IDESGidp.Controllers.AccountController.ExternalLogin (IDESGidp) in 118.3653ms
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 137.9167ms 302 
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/signin-google?state=CfDJ8GRzeSKAfKFJigNIN2uw9lDEiddzbwtY5qLldzSrtP6s5bx-LKQJxJwV-hvfrBBbSZQ36QJiJhM2ZgZWkD_72qH7As2xkULkJv0o_hOt8WsYpXO7YCBSRlsXy_Fjw6FY_IbZ4RgnRI3pNwiUItexdtRTX5uddAE5pPLFxV3T0aXI2EfLwMl-vJdJVnLcKBk4DHlAT7KXwn8jhKSA8tj3Sh89GEFrqY0d2sPaUsbdCT-3qLmfSAHsfCdH1jYQraASmfNTt1YqTz75aRy7-qmCezKE8GTJ1iEybbgWKwnJ8PFxCb5caQD4x8X73xlf1YWzt6kNeJmxWCdM2Nf4HS_mbY-ZuLM34PUdGBgsbhkJsZwgeF8anhsNXaBhvmvW-sEqDctye1jusTkvuVCHtWmaFcPYND1uSBZyxMVVgNjv51xTNjRXcKPb6zOPPfqMdapDRwUhYfgNRgLJOSpsqAB_4IBwzzamwfRko5INDpNCV8NWbXi3waMSMnGh1cvz8hXilJHSkc1OUpVRz1_eJr2LTqKZWIhbb3uoMephdunLren-YzkckC9drf5bGEmqLMqeGu7jWw20hxBu6IS3U03jSqthEdOQ_JPLOBeyo0suMUYG-FXQmhLlprvVJDLW-F07c0Wk8IGRE6ieWXmqIMIFEwiZ1misBuCLkSBIT_laflTROAARcGn92TsbYiDgF8_Hqj5PHb3Khyv5FNAR_DbNQDT9TT1K_T2V6nK4vpbKU1ESPAy0d74QDzTIF47Hh7SuEVCgVeDz_XAMrzlsaoyGUezAJb46VHKdcsvhdL1A0YwrkJw5SuTyiMXgfB0qOKfUXPyTy3wseOOI28a4CNlRIWvupuZw_QGvVo_xfx01dENLfPQkqDAZLxNUBa9ITYE04s6_NFdPOQaf1tAVC8UGLE7j8s4GxYlzH_17_seubuK3XwWhb_zEKYrtHd4gjP6TSiDMdLB2uPunKs7m0n9Gq5LqKdm0uLEzbmLlTy4opFLLA0IdgKJoC7BzvrqmC-BGMwDWCi9xSKyXbt_UHTMTqkfhUkGSMnhvBD9DT-n7Luk2YsFq6f1ZZ4_OXsG99gLC4Kz9Qxz3RIVCwTwMhOPtnkIIZjTo4-JzkGrW8k25kqeddxkD-uttuTRdVAcdOL1-H6z6fNn8uzES5U4xB9h6FjHn9u9XQJSwiCBqRUkKFoTNz65nsS1YMZpQ6vsF9ByReWu5E9ZhiZI8RN334Q04dfPcnJ-M9P1sWZD0gdTGJ3A25G8EoqygrToIgge2xqAC3BPsGYGMjOihTr5VaewbpeMLb-g761F0MzVo3eNfNqUjkol3i1f69PBx7hQpEIUvYkf14o8sCUSqKTBi0ZDIKHg&code=4/AACHH_V9k0uKbUlFh7mFEkCqyGceq5PZbOvsDdnVxKt7d8BEBQUi8O4mLB8Tbrs-9tt0Qa_BB83bsaGwQLsN0Mg&authuser=0&session_state=33ca1a0a5688a5b745dbdcff6fa556fbb12d4017..34f5&prompt=none  
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Collections.NonGeneric.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.IO.Compression.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.External signed in.
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 553.2959ms 302 
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/Account/ExternalLoginCallback?returnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DIDESG2rp%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A44371%252Fsignin-oidc%26response_type%3Did_token%26scope%3Dopenid%2520profile%2520email%26response_mode%3Dform_post%26nonce%3D636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi%26state%3DCfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg%26x-client-SKU%3DID_NETSTANDARD1_4%26x-client-ver%3D5.2.0.0  
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executing action method IDESGidp.Controllers.AccountController.ExternalLoginCallback (IDESGidp) with arguments (/connect/authorize/callback?client_id=IDESG2rp&redirect_uri=https%3A%2F%2Flocalhost%3A44371%2Fsignin-oidc&response_type=id_token&scope=openid%20profile%20email&response_mode=form_post&nonce=636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi&state=CfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg&x-client-SKU=ID_NETSTANDARD1_4&x-client-ver=5.2.0.0, ) - ModelState is Valid
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.External was successfully authenticated.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Linq.Queryable.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Reflection.Extensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+Microsoft.EntityFrameworkCore.Infrastructure:Information: Entity Framework Core 2.0.2-rtm-10011 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Transactions.Local.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\system.data.sqlclient\4.4.3\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\store\x86\netcoreapp2.0\system.text.encoding.codepages\4.4.0\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+The thread 0x2314 has exited with code 0 (0x0).
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (192ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [userLogin].[LoginProvider], [userLogin].[ProviderKey], [userLogin].[ProviderDisplayName], [userLogin].[UserId]
+FROM [AspNetUserLogins] AS [userLogin]
+WHERE ([userLogin].[LoginProvider] = @__loginProvider_0) AND ([userLogin].[ProviderKey] = @__providerKey_1)
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (44ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CreatedOn], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TokenTypes], [u].[TwoFactorEnabled], [u].[UpdatedOn], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Id] = @__userId_0
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.External signed out.
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (44ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (44ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+IdentityServer4.Hosting.IdentityServerAuthenticationService:Debug: Augmenting SignInContext
+IdentityServer4.Hosting.IdentityServerAuthenticationService:Debug: Removing amr claim with value: Google
+IdentityServer4.Hosting.IdentityServerAuthenticationService:Debug: Adding idp claim with value: Google
+IdentityServer4.Hosting.IdentityServerAuthenticationService:Debug: Adding amr claim with value: external
+IdentityServer4.Hosting.IdentityServerAuthenticationService:Debug: Adding auth_time claim with value: 1532109994
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application signed in.
+IDESGidp.Controllers.AccountController:Information: User signed in with Google provider.
+Microsoft.AspNetCore.Mvc.Internal.RedirectResultExecutor:Information: Executing RedirectResult, redirecting to /connect/authorize/callback?client_id=IDESG2rp&redirect_uri=https%3A%2F%2Flocalhost%3A44371%2Fsignin-oidc&response_type=id_token&scope=openid%20profile%20email&response_mode=form_post&nonce=636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi&state=CfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg&x-client-SKU=ID_NETSTANDARD1_4&x-client-ver=5.2.0.0.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executed action IDESGidp.Controllers.AccountController.ExternalLoginCallback (IDESGidp) in 2184.8116ms
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 2213.4783ms 302 
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/connect/authorize/callback?client_id=IDESG2rp&redirect_uri=https%3A%2F%2Flocalhost%3A44371%2Fsignin-oidc&response_type=id_token&scope=openid%20profile%20email&response_mode=form_post&nonce=636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi&state=CfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg&x-client-SKU=ID_NETSTANDARD1_4&x-client-ver=5.2.0.0  
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application was successfully authenticated.
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application was successfully authenticated.
+IdentityServer4.Hosting.EndpointRouter:Debug: Request path /connect/authorize/callback matched to endpoint type Authorize
+IdentityServer4.Hosting.EndpointRouter:Debug: Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+IdentityServer4.Hosting.IdentityServerMiddleware:Information: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+IdentityServer4.Endpoints.AuthorizeCallbackEndpoint:Debug: Start authorize callback request
+IdentityServer4.Endpoints.AuthorizeCallbackEndpoint:Debug: User in authorize request: eda502ff-986c-4912-a68c-e499246f3be3
+IdentityServer4.Validation.AuthorizeRequestValidator:Debug: Start authorize request protocol validation
+IdentityServer4.Stores.ValidatingClientStore:Debug: client configuration validation for client IDESG2rp succeeded.
+IdentityServer4.Validation.AuthorizeRequestValidator:Debug: Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+IdentityServer4.Endpoints.AuthorizeCallbackEndpoint:Information: ValidatedAuthorizeRequest
+{
+  "ClientId": "IDESG2rp",
+  "ClientName": "IDESG Best Practice RP",
+  "RedirectUri": "https://localhost:44371/signin-oidc",
+  "AllowedRedirectUris": [
+    "https://localhost:44371/signin-oidc"
+  ],
+  "SubjectId": "eda502ff-986c-4912-a68c-e499246f3be3",
+  "ResponseType": "id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "implicit",
+  "RequestedScopes": "openid profile email",
+  "State": "CfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg",
+  "Nonce": "636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi",
+  "SessionId": "9c26b8fafec1c29f181640d36d19e814",
+  "Raw": {
+    "client_id": "IDESG2rp",
+    "redirect_uri": "https://localhost:44371/signin-oidc",
+    "response_type": "id_token",
+    "scope": "openid profile email",
+    "response_mode": "form_post",
+    "nonce": "636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi",
+    "state": "CfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+Microsoft.EntityFrameworkCore.Infrastructure:Information: Entity Framework Core 2.0.2-rtm-10011 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (44ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[CreatedOn], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TokenTypes], [e].[TwoFactorEnabled], [e].[UpdatedOn], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+IdentityServer4.Stores.DefaultUserConsentStore:Debug: user_consent grant with value: IDESG2rp|eda502ff-986c-4912-a68c-e499246f3be3 not found in store.
+IdentityServer4.Services.DefaultConsentService:Debug: Found no prior consent from consent store, consent is required
+IdentityServer4.ResponseHandling.AuthorizeInteractionResponseGenerator:Information: Showing consent: User has not yet consented
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 382.8149ms 302 
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/consent?returnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DIDESG2rp%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A44371%252Fsignin-oidc%26response_type%3Did_token%26scope%3Dopenid%2520profile%2520email%26response_mode%3Dform_post%26nonce%3D636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi%26state%3DCfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg%26x-client-SKU%3DID_NETSTANDARD1_4%26x-client-ver%3D5.2.0.0  
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application was successfully authenticated.
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application was successfully authenticated.
+Microsoft.AspNetCore.Authorization.DefaultAuthorizationService:Information: Authorization was successful for user: tomcj.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executing action method IDESGidp.Controllers.ConsentController.Index (IDESGidp) with arguments (/connect/authorize/callback?client_id=IDESG2rp&redirect_uri=https%3A%2F%2Flocalhost%3A44371%2Fsignin-oidc&response_type=id_token&scope=openid%20profile%20email&response_mode=form_post&nonce=636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi&state=CfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg&x-client-SKU=ID_NETSTANDARD1_4&x-client-ver=5.2.0.0) - ModelState is Valid
+IdentityServer4.Validation.AuthorizeRequestValidator:Debug: Start authorize request protocol validation
+IdentityServer4.Stores.ValidatingClientStore:Debug: client configuration validation for client IDESG2rp succeeded.
+IdentityServer4.Validation.AuthorizeRequestValidator:Debug: Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+IDESGidp.Controllers.ConsentController:Error: Start Build Consent View Model System.Collections.Generic.List`1[System.String]
+IdentityServer4.Stores.ValidatingClientStore:Debug: client configuration validation for client IDESG2rp succeeded.
+Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor:Information: Executing ViewResult, running view at path /Views/Consent/Index.cshtml.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executed action IDESGidp.Controllers.ConsentController.Index (IDESGidp) in 241.6675ms
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 275.7913ms 200 text/html; charset=utf-8
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 POST http://idesg-idp.azurewebsites.net/consent application/x-www-form-urlencoded 1202
+IdentityServer4.Hosting.CorsPolicyProvider:Debug: CORS request made for path: /consent from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application was successfully authenticated.
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application was successfully authenticated.
+Microsoft.AspNetCore.Authorization.DefaultAuthorizationService:Information: Authorization was successful for user: tomcj.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executing action method IDESGidp.Controllers.ConsentController.Index (IDESGidp) with arguments (IDESGidp.Models.ConsentInputModel) - ModelState is Valid
+IdentityServer4.Validation.AuthorizeRequestValidator:Debug: Start authorize request protocol validation
+IdentityServer4.Stores.ValidatingClientStore:Debug: client configuration validation for client IDESG2rp succeeded.
+IdentityServer4.Validation.AuthorizeRequestValidator:Debug: Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+Microsoft.AspNetCore.Mvc.Internal.RedirectResultExecutor:Information: Executing RedirectResult, redirecting to /connect/authorize/callback?client_id=IDESG2rp&redirect_uri=https%3A%2F%2Flocalhost%3A44371%2Fsignin-oidc&response_type=id_token&scope=openid%20profile%20email&response_mode=form_post&nonce=636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi&state=CfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg&x-client-SKU=ID_NETSTANDARD1_4&x-client-ver=5.2.0.0.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executed action IDESGidp.Controllers.ConsentController.Index (IDESGidp) in 99.5273ms
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 142.0469ms 302 
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/connect/authorize/callback?client_id=IDESG2rp&redirect_uri=https%3A%2F%2Flocalhost%3A44371%2Fsignin-oidc&response_type=id_token&scope=openid%20profile%20email&response_mode=form_post&nonce=636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi&state=CfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg&x-client-SKU=ID_NETSTANDARD1_4&x-client-ver=5.2.0.0  
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application was successfully authenticated.
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application was successfully authenticated.
+IdentityServer4.Hosting.EndpointRouter:Debug: Request path /connect/authorize/callback matched to endpoint type Authorize
+IdentityServer4.Hosting.EndpointRouter:Debug: Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+IdentityServer4.Hosting.IdentityServerMiddleware:Information: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+IdentityServer4.Endpoints.AuthorizeCallbackEndpoint:Debug: Start authorize callback request
+IdentityServer4.Endpoints.AuthorizeCallbackEndpoint:Debug: User in authorize request: eda502ff-986c-4912-a68c-e499246f3be3
+IdentityServer4.Validation.AuthorizeRequestValidator:Debug: Start authorize request protocol validation
+IdentityServer4.Stores.ValidatingClientStore:Debug: client configuration validation for client IDESG2rp succeeded.
+IdentityServer4.Validation.AuthorizeRequestValidator:Debug: Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+IdentityServer4.Endpoints.AuthorizeCallbackEndpoint:Information: ValidatedAuthorizeRequest
+{
+  "ClientId": "IDESG2rp",
+  "ClientName": "IDESG Best Practice RP",
+  "RedirectUri": "https://localhost:44371/signin-oidc",
+  "AllowedRedirectUris": [
+    "https://localhost:44371/signin-oidc"
+  ],
+  "SubjectId": "eda502ff-986c-4912-a68c-e499246f3be3",
+  "ResponseType": "id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "implicit",
+  "RequestedScopes": "openid profile email",
+  "State": "CfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg",
+  "Nonce": "636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi",
+  "SessionId": "9c26b8fafec1c29f181640d36d19e814",
+  "Raw": {
+    "client_id": "IDESG2rp",
+    "redirect_uri": "https://localhost:44371/signin-oidc",
+    "response_type": "id_token",
+    "scope": "openid profile email",
+    "response_mode": "form_post",
+    "nonce": "636677067757367830.Njg0ODI4YTItNmEyYy00MDQ5LTlkNDctMzMwNGUyM2VhMzAyNGE0MGMwZjktMDZjMi00YjY0LTk5NmMtMzgyMTA0NTVkYzBi",
+    "state": "CfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+Microsoft.EntityFrameworkCore.Infrastructure:Information: Entity Framework Core 2.0.2-rtm-10011 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (44ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[CreatedOn], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TokenTypes], [e].[TwoFactorEnabled], [e].[UpdatedOn], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+IdentityServer4.Stores.DefaultUserConsentStore:Debug: user_consent grant with value: IDESG2rp|eda502ff-986c-4912-a68c-e499246f3be3 not found in store.
+IdentityServer4.Services.DefaultConsentService:Debug: Found no prior consent from consent store, consent is required
+IdentityServer4.ResponseHandling.AuthorizeInteractionResponseGenerator:Information: User consented to scopes: openid, profile, email
+IdentityServer4.ResponseHandling.AuthorizeInteractionResponseGenerator:Debug: User indicated to remember consent for scopes: openid, profile, email
+IdentityServer4.Services.DefaultConsentService:Debug: Client allows remembering consent, and consent given. Updating consent store for subject: eda502ff-986c-4912-a68c-e499246f3be3
+IdentityServer4.ResponseHandling.AuthorizeResponseGenerator:Debug: Creating Implicit Flow response.
+IdentityServer4.Services.DefaultClaimsService:Debug: Getting claims for identity token for subject: eda502ff-986c-4912-a68c-e499246f3be3 and client: IDESG2rp
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (43ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Microsoft.EntityFrameworkCore.Database.Command:Information: Executed DbCommand (44ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\home\site\wwwroot\System.IdentityModel.Tokens.Jwt.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'D:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\2.0.9\System.Text.Encoding.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+IdentityServer4.Endpoints.AuthorizeCallbackEndpoint:Information: Authorize endpoint response
+{
+  "SubjectId": "eda502ff-986c-4912-a68c-e499246f3be3",
+  "ClientId": "IDESG2rp",
+  "RedirectUri": "https://localhost:44371/signin-oidc",
+  "State": "CfDJ8JKvc0hrXUpIrjrVFUBGO6Pvt-dPYewqk80IHvWxdo6a3FeXId4Xf9E3x0A36ilXgLZU1_0zl-irlLOEzloR-36ueCOO98i8gLxjxnLD2GAeORyDCEJLiqgHLPCRkhznxekScmVAZZquPFqMp_x8XNrbvKkRg4yMAAlChby55UkJkeYxyJar-ujltu_BPfcR1_9dGJbu0ixfQ_oy5j-oSXHwrgykAy-tfvM0IaBLpSINTj77gbOf-u4KpR8fCvlaYgFJxYqDUNZS5V-Rn7AktOmUNv826naDCB-C4VQr6Sah_yXpv4b2belpLhA6RSP1eaYHfGu-zu0eraoMThbVt8RJu9dzXpbUw3-N7BJzFMZ_eDhJaXr9TvDahkyfks5Nvg",
+  "Scope": "openid profile email"
+}
+IdentityServer4.Hosting.IdentityServerAuthenticationService:Debug: Augmenting SignInContext
+Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler:Information: AuthenticationScheme: Identity.Application signed in.
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 846.5338ms 200 text/html; charset=UTF-8

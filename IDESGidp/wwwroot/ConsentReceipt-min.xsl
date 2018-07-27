@@ -68,7 +68,6 @@
             </td>
           </tr>
 
-
           <tr>
             <td>
               Jurisdiction
@@ -125,8 +124,14 @@
         <div>
           Version:
           <xsl:value-of select='ConsentReceipt/version' />
+
+          <xsl:element name='a'>
+            <xsl:attribute name='href'>
+            http://tcwiki.azurewebsites.net/index.php?title=Consent_Receipt
+            </xsl:attribute>
+           Follow this link to a description of a Receipt
+          </xsl:element>
         </div>
->
       </div>
 
   </xsl:template>

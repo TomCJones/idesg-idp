@@ -1,0 +1,74 @@
+﻿Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/.well-known/openid-configuration  
+IdentityServer4.Hosting.EndpointRouter:Debug: Request path /.well-known/openid-configuration matched to endpoint type Discovery
+IdentityServer4.Hosting.EndpointRouter:Debug: Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+IdentityServer4.Hosting.IdentityServerMiddleware:Information: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+IdentityServer4.Endpoints.DiscoveryEndpoint:Debug: Start discovery request
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 473.5549ms 200 application/json; charset=UTF-8
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/.well-known/openid-configuration/jwks  
+IdentityServer4.Hosting.EndpointRouter:Debug: Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+IdentityServer4.Hosting.EndpointRouter:Debug: Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+IdentityServer4.Hosting.IdentityServerMiddleware:Information: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+IdentityServer4.Endpoints.DiscoveryKeyEndpoint:Debug: Start key discovery request
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 89.6104ms 200 application/json; charset=UTF-8
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/connect/authorize?client_id=IDESG2rp&redirect_uri=https%3A%2F%2Fidesg2rp.azurewebsites.net%2Fsignin-oidc&response_type=id_token&scope=openid%20profile%20email&response_mode=form_post&nonce=636677878512180908.NDg0ZDg3OTItMTQyMC00OTQ2LTgzOGMtZmVmZmE1ZDJlMGFlZjZhNjc2YmYtODBiYS00MzU4LThmMjAtY2YzNzY5ZTZiN2Zi&state=CfDJ8PFDFDt2-n5FgJUQ89d6aUR6yaevzntUtW1UhK2dIXRQpDd8aRFVgic5x1HnTf2KuQqgGnZN4F-h4vaKY9OI0skoFV5zm94X4iArzKxZjwJ4rvtNnyrJfmJdb8uP3WNIgFnPQPQRw2PKWIe9X0RiKRqBWiTsY6ZvaZW54BEvEZVEy47pXbZle0yiM5DnmpsAoKgKCafnsZHaRRFCDkNSjZyNsMHNuk6eGJlioMNJ4Hdau47uRmJB4T5Ty3iAOXbccPeD9qJMJIYCU4KscQHdinGGpZHXyQHLthtoIa5kDbuc0c0Rr_GVNF10R9NahI1L36VmlbQUZbWfDWFMAyXBiP0SiHC1WJzpjQojmgxgOfwg5zUhtWMS1bnpFzvF3BOerw&x-client-SKU=ID_NETSTANDARD1_4&x-client-ver=5.2.0.0  
+IdentityServer4.Hosting.EndpointRouter:Debug: Request path /connect/authorize matched to endpoint type Authorize
+IdentityServer4.Hosting.EndpointRouter:Debug: Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+IdentityServer4.Hosting.IdentityServerMiddleware:Information: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+IdentityServer4.Endpoints.AuthorizeEndpoint:Debug: Start authorize request
+IdentityServer4.Endpoints.AuthorizeEndpoint:Debug: No user present in authorize request
+IdentityServer4.Validation.AuthorizeRequestValidator:Debug: Start authorize request protocol validation
+IdentityServer4.Stores.ValidatingClientStore:Debug: client configuration validation for client IDESG2rp succeeded.
+IdentityServer4.Validation.AuthorizeRequestValidator:Error: Invalid redirect_uri: https://idesg2rp.azurewebsites.net/signin-oidc
+{
+  "ClientId": "IDESG2rp",
+  "ClientName": "IDESG Best Practice RP",
+  "AllowedRedirectUris": [
+    "https://localhost:44371/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "RequestedScopes": "",
+  "Raw": {
+    "client_id": "IDESG2rp",
+    "redirect_uri": "https://idesg2rp.azurewebsites.net/signin-oidc",
+    "response_type": "id_token",
+    "scope": "openid profile email",
+    "response_mode": "form_post",
+    "nonce": "636677878512180908.NDg0ZDg3OTItMTQyMC00OTQ2LTgzOGMtZmVmZmE1ZDJlMGFlZjZhNjc2YmYtODBiYS00MzU4LThmMjAtY2YzNzY5ZTZiN2Zi",
+    "state": "CfDJ8PFDFDt2-n5FgJUQ89d6aUR6yaevzntUtW1UhK2dIXRQpDd8aRFVgic5x1HnTf2KuQqgGnZN4F-h4vaKY9OI0skoFV5zm94X4iArzKxZjwJ4rvtNnyrJfmJdb8uP3WNIgFnPQPQRw2PKWIe9X0RiKRqBWiTsY6ZvaZW54BEvEZVEy47pXbZle0yiM5DnmpsAoKgKCafnsZHaRRFCDkNSjZyNsMHNuk6eGJlioMNJ4Hdau47uRmJB4T5Ty3iAOXbccPeD9qJMJIYCU4KscQHdinGGpZHXyQHLthtoIa5kDbuc0c0Rr_GVNF10R9NahI1L36VmlbQUZbWfDWFMAyXBiP0SiHC1WJzpjQojmgxgOfwg5zUhtWMS1bnpFzvF3BOerw",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+IdentityServer4.Endpoints.AuthorizeEndpoint:Error: Request validation failed
+IdentityServer4.Endpoints.AuthorizeEndpoint:Information: {
+  "ClientId": "IDESG2rp",
+  "ClientName": "IDESG Best Practice RP",
+  "AllowedRedirectUris": [
+    "https://localhost:44371/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "RequestedScopes": "",
+  "Raw": {
+    "client_id": "IDESG2rp",
+    "redirect_uri": "https://idesg2rp.azurewebsites.net/signin-oidc",
+    "response_type": "id_token",
+    "scope": "openid profile email",
+    "response_mode": "form_post",
+    "nonce": "636677878512180908.NDg0ZDg3OTItMTQyMC00OTQ2LTgzOGMtZmVmZmE1ZDJlMGFlZjZhNjc2YmYtODBiYS00MzU4LThmMjAtY2YzNzY5ZTZiN2Zi",
+    "state": "CfDJ8PFDFDt2-n5FgJUQ89d6aUR6yaevzntUtW1UhK2dIXRQpDd8aRFVgic5x1HnTf2KuQqgGnZN4F-h4vaKY9OI0skoFV5zm94X4iArzKxZjwJ4rvtNnyrJfmJdb8uP3WNIgFnPQPQRw2PKWIe9X0RiKRqBWiTsY6ZvaZW54BEvEZVEy47pXbZle0yiM5DnmpsAoKgKCafnsZHaRRFCDkNSjZyNsMHNuk6eGJlioMNJ4Hdau47uRmJB4T5Ty3iAOXbccPeD9qJMJIYCU4KscQHdinGGpZHXyQHLthtoIa5kDbuc0c0Rr_GVNF10R9NahI1L36VmlbQUZbWfDWFMAyXBiP0SiHC1WJzpjQojmgxgOfwg5zUhtWMS1bnpFzvF3BOerw",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 203.0634ms 302 
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/home/error?errorId=CfDJ8GRzeSKAfKFJigNIN2uw9lB18IVG9oa_mtaQ6Fss6pwDFdvxTg0I9XDVCkKH7eQfrchES0tqDX81rhXTDzmV7EaVwyZepKEct_j-NY-nbJpTURVMTuHBwpam6m3PLZ0sVitCtzP6yvIjzPr8MYlu5mcYu7LyFYtZTtPZkDpbfmfWHRUyze6RjcSzA58dlUejJo8RxiTm7A62uQn8ZTyxhM4lGCmPdNFpVn2-Gck_cxNXi3rlbpfdbj0-GgaRKFXvSXNeX1DTSY4dL3EaeTdNPtcaTTC9y7emtu93snHCNCMXzLhT5ePynOniC5ivEi31BA  
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executing action method IDESGidp.Controllers.HomeController.Error (IDESGidp) with arguments ((null)) - ModelState is Valid
+Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor:Information: Executing ViewResult, running view at path /Views/Shared/Error.cshtml.
+Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker:Information: Executed action IDESGidp.Controllers.HomeController.Error (IDESGidp) in 102.1288ms
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 107.089ms 200 text/html; charset=utf-8
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/css/site.css  
+Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware:Information: The file /css/site.css was not modified
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 9.6229ms 304 text/css
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request starting HTTP/1.1 GET http://idesg-idp.azurewebsites.net/images/oid-l-pending-noborder.png  
+Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware:Information: The file /images/oid-l-pending-noborder.png was not modified
+Microsoft.AspNetCore.Hosting.Internal.WebHost:Information: Request finished in 26.7749ms 304 image/png

@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="en">
+  <siteinfo>
+    <sitename>IDESG Wiki</sitename>
+    <dbname>wiki</dbname>
+    <base>https://wiki.idesg.org/wiki/index.php?title=Main_Page</base>
+    <generator>MediaWiki 1.25.3</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">IDESG Wiki</namespace>
+      <namespace key="5" case="first-letter">IDESG Wiki talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Use Cases/April 9, 2014 Meeting Page</title>
+    <ns>0</ns>
+    <id>732</id>
+    <revision>
+      <id>4030</id>
+      <timestamp>2014-04-23T16:50:04Z</timestamp>
+      <contributor>
+        <username>Jonathan Rosenberg</username>
+        <id>194</id>
+      </contributor>
+      <comment>Created page with &quot;Usecase AHG meeting 9 April 2014 4:00 pm EDT  Present: Bryan Russell (chair), Cathy Tilton, Jim Fenton, Bob Pinheiro, Jonathan Rosenberg, Bob Faron  Approval of minutes from M...&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1840">Usecase AHG meeting 9 April 2014 4:00 pm EDT
+
+Present: Bryan Russell (chair), Cathy Tilton, Jim Fenton, Bob
+Pinheiro, Jonathan Rosenberg, Bob Faron
+
+Approval of minutes from March 26: Approved (Fenton/Tilton)
+
+Bryan has comments from Ann Racuya-Robbins on the terms of use. Still
+waiting for input from Jim Fenton
+
+Plenary report: Jim Fenton did the report-out at the
+plenary. Discussion of where we are in the use case lifecycle, and how
+we stand in particular with respect to the diversity criteria for use
+case sets. The intent was that the diversity criteria do apply to this
+first set of use cases, but the Management Council action required on
+each set of use cases isn't entirely clear. There was mixed success in
+getting the committees to review it, but they were given the
+opportunity (last fall).
+
+Some question whether the document should pass for Privacy approval:
+from the AHG or SCC? Exact process probably doesn't matter, as long as
+the request for approval is clear.
+
+Discussion of Bob Pinheiro's UMA-based use case: the use case
+describes granting access to a resource without the use of claims, as
+might be done if a resource owner directly gave access to a resource
+to another party. There was some discussion of whether this is
+in-scope for the Identity Ecosystem since it doesn't involve many of
+its mechanisms. Bob is revising this use case on the wiki for the next
+iteration.
+
+There were other use cases asked for at the plenary, particularly for
+cloud-based services and policy-based access control.
+
+Tom Jones did some revision of his use cases, but these changes need
+more review(privacy enhanced by user agent, trust elevation)
+
+Goal for next week is to complete the dispositions. Bryan will put out
+an email to the listserv asking people to prepare any objections if
+they have any.
+
+Meeting adjourned 5:05 pm EDT</text>
+      <sha1>b8139b2v050d997dcenvpaoo1k57a2a</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Use Cases/March 12, 2014 Meeting Page</title>
+    <ns>0</ns>
+    <id>685</id>
+    <revision>
+      <id>3697</id>
+      <timestamp>2014-03-18T18:23:55Z</timestamp>
+      <contributor>
+        <username>Bryan Russell</username>
+        <id>47</id>
+      </contributor>
+      <comment>Created page with &quot;Use Case Ad-Hoc Group 3.12.2014 4:05p.m. EST Notes Meeting to order Present Tom J., Bryan R., Ann R., Jonathan R., Cathy Tilton., J. Andrew Hatter.,&lt;br&gt; &lt;br&gt; 1)	Announcement o...&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1061">Use Case Ad-Hoc Group 3.12.2014 4:05p.m. EST
+Notes
+Meeting to order
+Present Tom J., Bryan R., Ann R., Jonathan R., Cathy Tilton., J. Andrew Hatter.,&lt;br&gt; &lt;br&gt;
+1)	Announcement of new chair of UCAHG,&lt;br&gt;
+2)	Plenary requested report for Use Case deliverable breakout for Use Case &lt;br&gt;
+3)	It was recommended that Plenary Use Case report inspired direction for future Use Cases that show the enhanced business case for IDESG&lt;br&gt;
+4)	Terms of Reference document was presented, reviewed and made available for edit by UCAHG members&lt;br&gt;
+5)	Continued dispositions of comments from the MC&lt;br&gt;
+6)	Amended comment 1 as being noted and offer Use Case criteria revision at Plenary breakout&lt;br&gt;
+7)	Amend comment 3 to append flow diagrams in “Process Flow” of current Use Case. Required flow diagrams for future Use Cases.&lt;br&gt;
+8)	Delete 2.6 in the deliverable regarding Use Case Categories.&lt;br&gt;
+9)	Privacy committee offered comments for Use Case in January 2014 it was agreed to dispose of comments and append additional comments to Use Case containing privacy considerations</text>
+      <sha1>5idycpia332ivzn8d5uv1g3farmzqhj</sha1>
+    </revision>
+    <revision>
+      <id>3707</id>
+      <parentid>3697</parentid>
+      <timestamp>2014-03-19T22:28:51Z</timestamp>
+      <contributor>
+        <username>Jim Fenton</username>
+        <id>30</id>
+      </contributor>
+      <minor/>
+      <comment>Jim Fenton moved page [[March 12, 2013 Meeting Page]] to [[Use Cases/March 12, 2014 Meeting Page]]: Correct date and make sub-page of Use Cases</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1061">Use Case Ad-Hoc Group 3.12.2014 4:05p.m. EST
+Notes
+Meeting to order
+Present Tom J., Bryan R., Ann R., Jonathan R., Cathy Tilton., J. Andrew Hatter.,&lt;br&gt; &lt;br&gt;
+1)	Announcement of new chair of UCAHG,&lt;br&gt;
+2)	Plenary requested report for Use Case deliverable breakout for Use Case &lt;br&gt;
+3)	It was recommended that Plenary Use Case report inspired direction for future Use Cases that show the enhanced business case for IDESG&lt;br&gt;
+4)	Terms of Reference document was presented, reviewed and made available for edit by UCAHG members&lt;br&gt;
+5)	Continued dispositions of comments from the MC&lt;br&gt;
+6)	Amended comment 1 as being noted and offer Use Case criteria revision at Plenary breakout&lt;br&gt;
+7)	Amend comment 3 to append flow diagrams in “Process Flow” of current Use Case. Required flow diagrams for future Use Cases.&lt;br&gt;
+8)	Delete 2.6 in the deliverable regarding Use Case Categories.&lt;br&gt;
+9)	Privacy committee offered comments for Use Case in January 2014 it was agreed to dispose of comments and append additional comments to Use Case containing privacy considerations</text>
+      <sha1>5idycpia332ivzn8d5uv1g3farmzqhj</sha1>
+    </revision>
+    <revision>
+      <id>3710</id>
+      <parentid>3707</parentid>
+      <timestamp>2014-03-19T22:38:55Z</timestamp>
+      <contributor>
+        <username>Jim Fenton</username>
+        <id>30</id>
+      </contributor>
+      <comment>Wikify text</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1023">Use Case Ad-Hoc Group 3.12.2014 4:05p.m. EST
+
+Notes&lt;br /&gt;
+Meeting to order&lt;br /&gt;
+Present: Tom J., Bryan R., Ann R., Jonathan R., Cathy Tilton., J. Andrew Hatter.
+
+# Announcement of new chair of UCAHG
+# Plenary requested report for Use Case deliverable breakout for Use Case
+# It was recommended that Plenary Use Case report inspired direction for future Use Cases that show the enhanced business case for IDESG
+# Terms of Reference document was presented, reviewed and made available for edit by UCAHG members
+# Continued dispositions of comments from the MC
+# Amended comment 1 as being noted and offer Use Case criteria revision at Plenary breakout
+# Amend comment 3 to append flow diagrams in “Process Flow” of current Use Case. Required flow diagrams for future Use Cases.
+# Delete 2.6 in the deliverable regarding Use Case Categories.
+# Privacy committee offered comments for Use Case in January 2014 it was agreed to dispose of comments and append additional comments to Use Case containing privacy considerations</text>
+      <sha1>7u6owvylcdj0di5x2xxlkhpg28hiy6l</sha1>
+    </revision>
+  </page>
+</mediawiki>
+

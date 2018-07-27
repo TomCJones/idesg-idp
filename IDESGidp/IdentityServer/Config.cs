@@ -17,6 +17,9 @@ namespace IdentityServer4
             {
                 new IdentityResources.OpenId(),
                 new IdentityResources.Profile(),
+                new IdentityResources.Email(),
+                new IdentityResources.Phone(),
+                new IdentityResources.Address()
             };
         }
 
@@ -34,6 +37,27 @@ namespace IdentityServer4
             // client credentials client
             return new List<Client>
             {
+                new Client
+                {
+                    ClientId = "IDESG2rp",
+                    ClientName = "IDESG Best Practice RP",
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    ClientSecrets =
+                    {
+                        new Secret("bazzfazz".Sha256())
+                    },
+                    RedirectUris = { "https://localhost:44371/signin-oidc" },
+                    PostLogoutRedirectUris = { "https://localhost:44371/signout-callback-oidc" },
+
+                    AllowedScopes =
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        IdentityServerConstants.StandardScopes.Email,
+                        IdentityServerConstants.StandardScopes.Phone,
+                        "IDESG"
+                    }
+                },
                 new Client
                 {
                     ClientId = "client",
@@ -81,37 +105,6 @@ namespace IdentityServer4
                         "api1"
                     },
                     AllowOfflineAccess = true
-                }
-            };
-        }
-
-        public static List<TestUser> GetUsers()
-        {
-            return new List<TestUser>
-            {
-                new TestUser
-                {
-                    SubjectId = "1",
-                    Username = "alice",
-                    Password = "password",
-
-                    Claims = new List<Claim>
-                    {
-                        new Claim("name", "Alice"),
-                        new Claim("website", "https://alice.com")
-                    }
-                },
-                new TestUser
-                {
-                    SubjectId = "2",
-                    Username = "bob",
-                    Password = "password",
-
-                    Claims = new List<Claim>
-                    {
-                        new Claim("name", "Bob"),
-                        new Claim("website", "https://bob.com")
-                    }
                 }
             };
         }
